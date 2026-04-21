@@ -50,6 +50,41 @@
 .textwidget a{
     text-decoration: none;
 }
-/* .footer-bg{
-    background-color: #4B6B34
-} */
+
+/* contact page */
+.section-title{
+    font-weight: 600;
+    color: #4d6b57;
+    margin-bottom: 20px;
+
+}
+.form-control,.form-select{
+    border-radius: 4px;
+
+
+}
+.btn-send{
+    color: #ffffff;
+    background-color: #4d6b57;
+    border-radius: 4px;
+    
+}
+.btn-send:hover{
+    background-color: #3c5445;
+
+}
+.accodion-button{
+    font-weight:500;
+    color: #3c5445;
+
+}
+.accordion-button:not(.collapsed){
+    background-color: #ffffff;
+    color: #3c5445;
+}
+.box{
+    background-color: white;
+    padding: 25px ;
+    border-radius: 6px;
+    box-shadow: 0 2px 6px rgb(29, 29, 29);
+}
