@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The St. Nicholas School - Giao diện mẫu</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Search Overlay -->
+    <div id="search-overlay" class="sns-search-overlay">
+        <div class="close-search-wrapper" id="close-search">
+            <i class="fa-solid fa-xmark"></i>
+        </div>
+
+        <div class="search-content-wrapper">
+            <form action="/search" method="get" class="search-form-flex">
+                <div class="input-with-icon">
+                    <i class="fa-solid fa-magnifying-glass search-icon-inside"></i>
+                    <input type="text" name="q" placeholder="Nhập từ khóa tìm kiếm tại St. Nicholas..." autofocus
+                        id="search-input">
+                </div>
+            </form>
+            <p class="search-tip text-white-50 small mt-3">Nhấn 'Enter' để tìm kiếm hoặc 'Esc' để đóng.</p>
+        </div>
+    </div>
+    <!-- end Search Overlay -->
+    <nav class="navbar navbar-expand-xl navbar-light bg-white sticky-top py-3 border-bottom">
+        <div class="container-fluid px-4">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="https://sns.edu.vn/wp-content/uploads/2026/03/LOGO-SNS-2025-e1773720149194-1400x622.png"
+                    alt="SNS Logo" height="70">
+            </a>
+
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar">
+                <div class="offcanvas-header border-bottom d-xl-none">
+                    <h5 class="offcanvas-title fw-bold text-success">MENU SNS</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+                </div>
+
+                <div class="offcanvas-body">
+                    <div class="d-xl-none mb-4">
+                        <div class="input-group border rounded-pill overflow-hidden">
+                            <input type="text" class="form-control border-0 px-3" placeholder="Tìm kiếm...">
+                            <button class="btn btn-light border-0"><i class="fa-solid fa-magnifying-glass"></i></button>
+                        </div>
+                    </div>
+
+                    <ul class="navbar-nav mx-auto text-uppercase fw-bold small">
+                        <li class="nav-item dropdown border-bottom-mobile">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Giới thiệu</a>
+                            <ul class="dropdown-menu border-0 shadow-sm">
+                                <li><a class="dropdown-item" href="gioithieu.html">St.Nicholas – Trường chuẩn quốc tế Mỹ tại Đà
+                                        Nẵng</a></li>
+                                <li><a class="dropdown-item" href="gioithieu.html">Tầm nhìn & Sứ mệnh</a></li>
+                                <li><a class="dropdown-item" href="equest.html">Giới Thiệu Tập Đoàn Giáo Dục EQuest</a></li>
+                                <li><a class="dropdown-item" href="bangiamhieu.html">Ban Giám hiệu</a></li>
+                                <li><a class="dropdown-item" href="#">Cơ quan kiểm định chất lượng và đối tác</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item dropdown border-bottom-mobile">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Hệ đào tạo</a>
+                            <ul class="dropdown-menu border-0 shadow-sm">
+                                <li><a class="dropdown-item" href="#">Hệ Mầm non</a></li>
+                                <li><a class="dropdown-item" href="#">Hệ Chuẩn Quốc tế</a></li>
+                                <li><a class="dropdown-item" href="#">Hệ Song ngữ Tích hợp</a></li>
+                                <li><a class="dropdown-item" href="#">Hệ Phổ thông tiếng Anh Mỹ nâng cao</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item border-bottom-mobile"><a class="nav-link" href="College_Board.html">College
+                                Board</a></li>
+                        <li class="nav-item border-bottom-mobile"><a class="nav-link" href="tuvan_duhoc.html">Tư vấn du
+                                học</a></li>
+                        <li class="nav-item dropdown border-bottom-mobile">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Tuyển sinh</a>
+                            <ul class="dropdown-menu border-0 shadow-sm">
+                                <li><a class="dropdown-item" href="#">Tại sao chọn SNS</a></li>
+                                <li><a class="dropdown-item" href="#">Quy trình đăng ký</a></li>
+                                <li><a class="dropdown-item" href="#">Học phí</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item dropdown border-bottom-mobile">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">C.E.P</a>
+                            <ul class="dropdown-menu border-0 shadow-sm">
+                                <li><a class="dropdown-item" href="#">Dã ngoại</a></li>
+                                <li><a class="dropdown-item" href="#">Câu lạc bộ</a></li>
+                                <li><a class="dropdown-item" href="#">Thể thao</a></li>
+                                <li><a class="dropdown-item" href="#">Hội đồng học sinh</a></li>
+                                <li><a class="dropdown-item" href="#">Hoạt động cộng đồng</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item dropdown border-bottom-mobile">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Học đường</a>
+                            <ul class="dropdown-menu border-0 shadow-sm">
+                                <li><a class="dropdown-item" href="#">Lịch năm học</a></li>
+                                <li><a class="dropdown-item" href="#">Cơ sở vật chất</a></li>
+                                <li><a class="dropdown-item" href="#">Tư vấn</a></li>
+                                <li><a class="dropdown-item" href="#">Dinh dưỡng</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item border-bottom-mobile"><a class="nav-link" href="tintuc.html">Tin tức</a></li>
+                        <li class="nav-item border-bottom-mobile"><a class="nav-link" href="lienhe.html">Liên hệ</a></li>
+                    </ul>
+
+                    <div class="d-flex flex-column flex-xl-row align-items-start align-items-xl-center mt-3 mt-xl-0">
+                        <div class="dropdown language-switcher me-xl-3 w-100 w-xl-auto">
+                            <a class="text-decoration-none text-dark fw-bold small dropdown-toggle d-flex justify-content-between align-items-center p-2 p-xl-0"
+                                href="#" id="langDropdown" data-bs-toggle="dropdown">
+                                <span>VN <img src="https://sns.edu.vn/wp-content/plugins/polylang/flags/vn.png"
+                                        width="18" class="ms-1"></span>
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-end shadow-sm">
+                                <li>
+                                    <a class="dropdown-item d-flex align-items-center justify-content-between" href="#">
+                                        TIẾNG VIỆT <img
+                                            src="https://sns.edu.vn/wp-content/plugins/polylang/flags/vn.png"
+                                            width="18">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item d-flex align-items-center justify-content-between" href="#">
+                                        ENGLISH <img src="https://sns.edu.vn/wp-content/plugins/polylang/flags/us.png"
+                                            width="18">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item d-flex align-items-center justify-content-between" href="#">
+                                        한국어 <img src="https://sns.edu.vn/wp-content/plugins/polylang/flags/kr.png"
+                                            width="18">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <i class="fa-solid fa-magnifying-glass fs-5 cursor-pointer d-none d-xl-block"></i>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!--  -->
+    <div class="container mt-4">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb bg-transparent p-0">
+                <li class="breadcrumb-item"><a href="index.html" class="text-decoration-none text-success">Trang chủ</a>
+                </li>
+                <li class="breadcrumb-item active" aria-current="page">Tư vấn du học</li>
+            </ol>
+        </nav>
+    </div>
+
+    <section class="consultancy-banner py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <h1 class="display-5 fw-bold text-success mb-3">TƯ VẤN DU HỌC</h1>
+                    <p class="lead fw-normal text-muted">
+                        Trường St. Nicholas đồng hành cùng học sinh trong lộ trình chinh phục các trường đại học danh
+                        giá tại Mỹ và thế giới.
+                    </p>
+                    <div class="divider-green mb-4"></div>
+                    <p>Chúng tôi cung cấp lộ trình cá nhân hóa, hỗ trợ chuẩn bị hồ sơ, luyện thi chứng chỉ và săn học
+                        bổng hiệu quả nhất cho từng Nicholasers.</p>
+                </div>
+                <div class="col-lg-6">
+                    <img src="https://sns.edu.vn/wp-content/uploads/2022/03/4.jpg.webp" alt="Du học SNS"
+                        class="img-fluid rounded-4 shadow-lg">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="registration-form py-5 bg-light">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-10 col-lg-8">
+                    <div class="card border-0 shadow-sm rounded-4 overflow-hidden">
+                        <div class="row g-0">
+                            <div class="col-md-5 bg-success d-flex align-items-center p-4 p-lg-5 text-white">
+                                <div>
+                                    <h3 class="fw-bold mb-4">Đăng ký Tư vấn</h3>
+                                    <p><i class="fa-solid fa-check me-2"></i> Lập lộ trình du học chi tiết</p>
+                                    <p><i class="fa-solid fa-check me-2"></i> Hướng dẫn săn học bổng</p>
+                                    <p><i class="fa-solid fa-check me-2"></i> Hỗ trợ thủ tục Visa</p>
+                                </div>
+                            </div>
+                            <div class="col-md-7 p-4 p-lg-5 bg-white">
+                                <form action="#" method="post">
+                                    <div class="mb-3">
+                                        <label class="form-label small fw-bold">Họ và tên Phụ huynh/Học sinh *</label>
+                                        <input type="text" class="form-control rounded-pill px-3" required
+                                            placeholder="Nguyễn Văn A">
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6 mb-3">
+                                            <label class="form-label small fw-bold">Số điện thoại *</label>
+                                            <input type="tel" class="form-control rounded-pill px-3" required
+                                                placeholder="0905 xxx xxx">
+                                        </div>
+                                        <div class="col-md-6 mb-3">
+                                            <label class="form-label small fw-bold">Email</label>
+                                            <input type="email" class="form-control rounded-pill px-3"
+                                                placeholder="email@example.com">
+                                        </div>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label class="form-label small fw-bold">Quốc gia mong muốn du học</label>
+                                        <select class="form-select rounded-pill px-3">
+                                            <option selected>Chọn quốc gia...</option>
+                                            <option value="usa">Hoa Kỳ (Mỹ)</option>
+                                            <option value="canada">Canada</option>
+                                            <option value="uk">Vương Quốc Anh</option>
+                                            <option value="aus">Australia</option>
+                                        </select>
+                                    </div>
+                                    <div class="mb-4">
+                                        <label class="form-label small fw-bold">Nội dung cần tư vấn</label>
+                                        <textarea class="form-control rounded-3" rows="3"
+                                            placeholder="Ví dụ: Tư vấn học bổng lớp 10..."></textarea>
+                                    </div>
+                                    <button type="submit"
+                                        class="btn btn-success w-100 rounded-pill fw-bold py-2 shadow-sm">GỬI YÊU CẦU
+                                        ĐĂNG KÝ</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--  -->
+
+    <footer class="text-white py-5" style="background-color: #3e502c;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 mb-4">
+                    <img src="https://sns.edu.vn/wp-content/uploads/2026/03/LOGO-SNS-2025_green-dark-scaled-e1773720100248-768x357.png"
+                        height="100" class="ms-2">
+                </div>
+                <div class="col-lg-3 mb-4">
+                    <h5 class="fw-bold mb-3">TUYỂN SINH</h5>
+                    <hr border-bottom pb-2 style="width: 100px;">
+                    <ul class="list-unstyled small lh-lg">
+                        <li>Tại sao chọn SNS</li>
+                        <li>Quy trình đăng ký</li>
+                        <li>Học phí</li>
+                        <li>Tuyển dụng</li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <h5 class="fw-bold mb-3">HỆ ĐÀO TẠO</h5>
+                    <hr border-bottom pb-2 style="width: 100px;">
+                    <ul class="list-unstyled small lh-lg">
+                        <li>Hệ Mầm non</li>
+                        <li>Hệ Chuẩn Quốc tế</li>
+                        <li>Hệ Song ngữ Tích hợp</li>
+                        <li>Hệ Phổ thông tiếng Anh Mỹ nâng cao</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="text-center pt-4 border-top opacity-50 small">
+                Copyright 2026 © St. Nicholas
+            </div>
+        </div>
+    </footer>
+
+    <div class="social-contact-circles">
+        <a href="tel:0123456789" class="contact-item phone" title="Gọi điện">
+            <i class="fa-solid fa-phone"></i>
+        </a>
+        <a href="https://zalo.me/yourid" class="contact-item zalo" title="Chat Zalo">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Icon_of_Zalo.svg" alt="Zalo">
+        </a>
+        <button id="backToTop" class="contact-item scroll-top">
+            <i class="fa-solid fa-chevron-up"></i>
+        </button>
+    </div>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+
+</html>

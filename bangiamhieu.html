@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The St. Nicholas School - Giao diện mẫu</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Search Overlay -->
+    <div id="search-overlay" class="sns-search-overlay">
+        <div class="close-search-wrapper" id="close-search">
+            <i class="fa-solid fa-xmark"></i>
+        </div>
+
+        <div class="search-content-wrapper">
+            <form action="/search" method="get" class="search-form-flex">
+                <div class="input-with-icon">
+                    <i class="fa-solid fa-magnifying-glass search-icon-inside"></i>
+                    <input type="text" name="q" placeholder="Nhập từ khóa tìm kiếm tại St. Nicholas..." autofocus
+                        id="search-input">
+                </div>
+            </form>
+            <p class="search-tip text-white-50 small mt-3">Nhấn 'Enter' để tìm kiếm hoặc 'Esc' để đóng.</p>
+        </div>
+    </div>
+    <!-- end Search Overlay -->
+    <nav class="navbar navbar-expand-xl navbar-light bg-white sticky-top py-3 border-bottom">
+        <div class="container-fluid px-4">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="https://sns.edu.vn/wp-content/uploads/2026/03/LOGO-SNS-2025-e1773720149194-1400x622.png"
+                    alt="SNS Logo" height="70">
+            </a>
+
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar">
+                <div class="offcanvas-header border-bottom d-xl-none">
+                    <h5 class="offcanvas-title fw-bold text-success">MENU SNS</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+                </div>
+
+                <div class="offcanvas-body">
+                    <div class="d-xl-none mb-4">
+                        <div class="input-group border rounded-pill overflow-hidden">
+                            <input type="text" class="form-control border-0 px-3" placeholder="Tìm kiếm...">
+                            <button class="btn btn-light border-0"><i class="fa-solid fa-magnifying-glass"></i></button>
+                        </div>
+                    </div>
+
+                    <ul class="navbar-nav mx-auto text-uppercase fw-bold small">
+                        <li class="nav-item dropdown border-bottom-mobile">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Giới thiệu</a>
+                            <ul class="dropdown-menu border-0 shadow-sm">
+                                <li><a class="dropdown-item" href="gioithieu.html">St.Nicholas – Trường chuẩn quốc tế Mỹ
+                                        tại Đà
+                                        Nẵng</a></li>
+                                <li><a class="dropdown-item" href="gioithieu.html">Tầm nhìn & Sứ mệnh</a></li>
+                                <li><a class="dropdown-item" href="equest.html">Giới Thiệu Tập Đoàn Giáo Dục EQuest</a>
+                                </li>
+                                <li><a class="dropdown-item" href="bangiamhieu.html">Ban Giám hiệu</a></li>
+                                <li><a class="dropdown-item" href="#">Cơ quan kiểm định chất lượng và đối tác</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item dropdown border-bottom-mobile">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Hệ đào tạo</a>
+                            <ul class="dropdown-menu border-0 shadow-sm">
+                                <li><a class="dropdown-item" href="#">Hệ Mầm non</a></li>
+                                <li><a class="dropdown-item" href="#">Hệ Chuẩn Quốc tế</a></li>
+                                <li><a class="dropdown-item" href="#">Hệ Song ngữ Tích hợp</a></li>
+                                <li><a class="dropdown-item" href="#">Hệ Phổ thông tiếng Anh Mỹ nâng cao</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item border-bottom-mobile"><a class="nav-link" href="College_Board.html">College
+                                Board</a></li>
+                        <li class="nav-item border-bottom-mobile"><a class="nav-link" href="tuvan_duhoc.html">Tư vấn du
+                                học</a></li>
+                        <li class="nav-item dropdown border-bottom-mobile">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Tuyển sinh</a>
+                            <ul class="dropdown-menu border-0 shadow-sm">
+                                <li><a class="dropdown-item" href="#">Tại sao chọn SNS</a></li>
+                                <li><a class="dropdown-item" href="#">Quy trình đăng ký</a></li>
+                                <li><a class="dropdown-item" href="#">Học phí</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item dropdown border-bottom-mobile">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">C.E.P</a>
+                            <ul class="dropdown-menu border-0 shadow-sm">
+                                <li><a class="dropdown-item" href="#">Dã ngoại</a></li>
+                                <li><a class="dropdown-item" href="#">Câu lạc bộ</a></li>
+                                <li><a class="dropdown-item" href="#">Thể thao</a></li>
+                                <li><a class="dropdown-item" href="#">Hội đồng học sinh</a></li>
+                                <li><a class="dropdown-item" href="#">Hoạt động cộng đồng</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item dropdown border-bottom-mobile">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Học đường</a>
+                            <ul class="dropdown-menu border-0 shadow-sm">
+                                <li><a class="dropdown-item" href="#">Lịch năm học</a></li>
+                                <li><a class="dropdown-item" href="#">Cơ sở vật chất</a></li>
+                                <li><a class="dropdown-item" href="#">Tư vấn</a></li>
+                                <li><a class="dropdown-item" href="#">Dinh dưỡng</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item border-bottom-mobile"><a class="nav-link" href="tintuc.html">Tin tức</a>
+                        </li>
+                        <li class="nav-item border-bottom-mobile"><a class="nav-link" href="lienhe.html">Liên hệ</a>
+                        </li>
+                    </ul>
+
+                    <div class="d-flex flex-column flex-xl-row align-items-start align-items-xl-center mt-3 mt-xl-0">
+                        <div class="dropdown language-switcher me-xl-3 w-100 w-xl-auto">
+                            <a class="text-decoration-none text-dark fw-bold small dropdown-toggle d-flex justify-content-between align-items-center p-2 p-xl-0"
+                                href="#" id="langDropdown" data-bs-toggle="dropdown">
+                                <span>VN <img src="https://sns.edu.vn/wp-content/plugins/polylang/flags/vn.png"
+                                        width="18" class="ms-1"></span>
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-end shadow-sm">
+                                <li>
+                                    <a class="dropdown-item d-flex align-items-center justify-content-between" href="#">
+                                        TIẾNG VIỆT <img
+                                            src="https://sns.edu.vn/wp-content/plugins/polylang/flags/vn.png"
+                                            width="18">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item d-flex align-items-center justify-content-between" href="#">
+                                        ENGLISH <img src="https://sns.edu.vn/wp-content/plugins/polylang/flags/us.png"
+                                            width="18">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item d-flex align-items-center justify-content-between" href="#">
+                                        한국어 <img src="https://sns.edu.vn/wp-content/plugins/polylang/flags/kr.png"
+                                            width="18">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <i class="fa-solid fa-magnifying-glass fs-5 cursor-pointer d-none d-xl-block"></i>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ban giam hiệu -->
+    <section class="leadership-section py-5 bg-white">
+        <div class="container">
+            <!-- Tiêu đề lớn -->
+            <h2 class="text-center fw-bold text-success-dark mb-5 text-uppercase letter-spacing-2">
+                The St. Nicholas School Leadership Team
+            </h2>
+
+            <!-- Khối thông tin lãnh đạo -->
+            <div class="row align-items-start g-4 g-lg-5">
+                <!-- Cột trái: Hình ảnh -->
+                <div class="col-md-4 col-lg-3">
+                    <div class="leader-image-wrapper">
+                        <img src="https://sns.edu.vn/wp-content/uploads/2026/04/Thay-David.png"
+                            alt="Ông J. David Armstrong, Jr." class="img-fluid rounded-2 shadow-sm">
+                    </div>
+                </div>
+
+                <!-- Cột phải: Thông tin chi tiết -->
+                <div class="col-md-8 col-lg-9">
+                    <div class="leader-info">
+                        <h3 class="fw-bold text-dark mb-1">Ông J. David Armstrong, Jr.</h3>
+                        <p class="text-muted fw-bold mb-4">
+                            Phó Chủ tịch, Tập đoàn EQuest, Chủ tịch danh dự trường St. Nicholas
+                        </p>
+
+                        <div class="leader-description text-secondary lh-lg">
+                            <p class="mb-3">
+                                Ông J. David Armstrong, Jr. sở hữu hơn 35 năm kinh nghiệm lãnh đạo trong lĩnh vực giáo
+                                dục đại học, phát triển kinh tế và xây dựng cộng đồng tại Hoa Kỳ.
+                            </p>
+                            <p class="mb-3">
+                                Ông từng giữ chức Chủ tịch Danh dự của Trường Cao đẳng Broward (Florida), nơi ông đã dẫn
+                                dắt ngôi trường này trong hơn một thập kỷ phát triển vượt bậc. Trước đó, ông đảm nhiệm
+                                vai trò Hiệu trưởng Hệ thống Cao đẳng Florida – một trong những hệ thống giáo dục cộng
+                                đồng lớn nhất tại Hoa Kỳ. Bên cạnh đó, ông còn tham gia tư vấn cho nhiều hội đồng giáo
+                                dục đại học, đồng thời từng giữ vị trí Phó Chủ tịch Liên minh Phát triển Kinh tế Quận
+                                Fort Lauderdale và Tổ chức Lãnh đạo địa phương Leadership Florida – nơi tập hợp các nhà
+                                hoạch định chính sách và lãnh đạo có ảnh hưởng trên toàn bang.
+                            </p>
+                            <p>
+                                Ông J. David Armstrong, Jr. tốt nghiệp Cử nhân ngành Khoa học Xã hội tại Đại học
+                                Montevallo (Hoa Kỳ) và nhận bằng Thạc sĩ Quản trị tại Đại học Troy (Hoa Kỳ).
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Nguyễn thị Bình -->
+            <div class="row align-items-start g-4 g-lg-5 pt-5 border-top mt-5">
+                <!-- Cột trái: Hình ảnh -->
+                <div class="col-md-4 col-lg-3">
+                    <div class="leader-image-wrapper">
+                        <img src="https://sns.edu.vn/wp-content/uploads/2026/04/Ms-B.png" alt="Bà Nguyễn Thị Bình"
+                            class="img-fluid rounded-2 shadow-sm">
+                    </div>
+                </div>
+
+                <!-- Cột phải: Thông tin chi tiết -->
+                <div class="col-md-8 col-lg-9">
+                    <div class="leader-info">
+                        <h3 class="fw-bold text-dark mb-1">Bà Nguyễn Thị Bình</h3>
+                        <p class="text-muted fw-bold mb-4">Tổng giám đốc</p>
+
+                        <div class="leader-description text-secondary lh-lg">
+                            <p class="mb-3">
+                                Bà Nguyễn Thị Bình là nhà lãnh đạo giàu kinh nghiệm với hơn 25 năm trong lĩnh vực quản
+                                trị tài chính, vận hành và giáo dục. Hiện bà giữ vai trò Giám đốc Điều hành hệ thống
+                                K-12 và Giám đốc Điều hành khu vực phía Nam tại Tập đoàn Giáo dục EQuest, đồng thời từng
+                                đảm nhiệm vị trí quản lý tại trường trong hệ thống Vinschool.
+                            </p>
+                            <p class="mb-3">
+                                Với nền tảng chuyên sâu về tài chính quốc tế cùng kinh nghiệm điều hành hệ thống trường
+                                học quy mô lớn, bà Bình có thế mạnh trong việc xây dựng chiến lược phát triển, quản trị
+                                vận hành và tối ưu hiệu quả tài chính trong giáo dục. Bà đã trực tiếp tham gia phát
+                                triển chương trình học, nâng cao chất lượng giảng dạy theo chuẩn quốc tế (Cambridge,
+                                IGCSE), đồng thời xây dựng và đào tạo đội ngũ giáo viên, cán bộ quản lý đáp ứng yêu cầu
+                                hội nhập.
+                            </p>
+                            <p class="mb-3">
+                                Bà sở hữu bằng Thạc sĩ Tài chính & Kế toán Quốc tế (Đại học Swinburne, Úc) cùng chứng
+                                chỉ nghề nghiệp uy tín CPA Australia và chương trình phát triển lãnh đạo tại Harvard
+                                Graduate School of Education.
+                            </p>
+                            <p>
+                                Với tư duy chiến lược, phong cách lãnh đạo hiện đại và cam kết phát triển con người, bà
+                                Nguyễn Thị Bình đóng vai trò quan trọng trong việc nâng cao chất lượng đào tạo và xây
+                                dựng môi trường giáo dục bền vững, chuẩn quốc tế tại St. Nicholas School.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end -->
+            <!-- 3. Ông Elvis Jardinel Lumame -->
+            <div class="row align-items-start g-4 g-lg-5 pt-5 border-top mt-5">
+                <div class="col-md-4 col-lg-3">
+                    <div class="leader-image-wrapper">
+                        <img src="https://sns.edu.vn/wp-content/uploads/2026/04/3706d7b1-c2df-4603-86fe-e2dfa8d60da6.png"
+                            alt="Ông Elvis Jardinel Lumame" class="img-fluid rounded-2 shadow-sm">
+                    </div>
+                </div>
+                <div class="col-md-8 col-lg-9">
+                    <div class="leader-info">
+                        <h3 class="fw-bold text-dark mb-1">Ông Elvis Jardinel Lumame</h3>
+                        <p class="text-muted fw-bold mb-4">Tổng Hiệu trưởng trường St. Nicholas</p>
+                        <div class="leader-description text-secondary lh-lg">
+                            <p>Với hơn 12 năm kinh nghiệm quốc tế trong lĩnh vực giáo dục, ông Elvis Jardinel Lumame tập
+                                trung sâu sắc vào quản lý học thuật khối K-12, xây dựng chương trình giảng dạy và phát
+                                triển sản phẩm giáo dục. Trên cương vị Hiệu trưởng Điều hành hiện tại, ông đóng vai trò
+                                chủ chốt trong việc thúc đẩy sự xuất sắc trong học thuật tại trường St. Nicholas. Trước
+                                đó, ông đã có ba năm dẫn dắt nhà trường trên cương vị Giám đốc Giáo dục Quốc tế và Giám
+                                đốc Học thuật. Trong suốt sự nghiệp, ông đã thành công trong việc điều hành các dự án
+                                giáo dục phức tạp, bao gồm chương trình World Scholar’s Cup, qua đó kiên định theo đuổi
+                                các tiêu chuẩn cao nhất trong hoạt động dạy và học.</p>
+                            <p>Với triết lý giáo dục bắt nguồn từ tư duy học tập suốt đời và thiết lập tầm nhìn, ông
+                                Lumame tâm huyết với sứ mệnh nuôi dưỡng học sinh trở thành những “Công dân toàn cầu”
+                                thực thụ. Ông tin tưởng vào việc trang bị cho học sinh những giá trị, kỹ năng và tư duy
+                                cần thiết để phát triển trong một thế giới đầy kết nối. Lãnh đạo của ông được xây dựng
+                                dựa trên sự tập trung, cống hiến và cam kết vững chắc cho hành trình phát triển không
+                                ngừng nghỉ, biến những tầm nhìn giáo dục đầy hoài bão thành hiện thực để xây dựng một
+                                cộng đồng học tập đầy sức sống.</p>
+                            <p>Ông Lumame có bằng Thạc sĩ kép ngành Giáo dục, chuyên ngành Quản trị & Giám sát và Khoa
+                                học Điều dưỡng tại Đại học Universidad de Sta. Isabel (Philippines). Ông cũng sở hữu
+                                bằng Cử nhân Khoa học từ Trường Cao đẳng Bách khoa Camarines Sur và hoàn thành Chương
+                                trình Chứng chỉ Giảng dạy tại Đại học Nueva Caceres. Ngoài ra, ông là Nhà giáo chuyên
+                                nghiệp được cấp phép (QTS) chuyên ngành Khoa học Sinh học và sở hữu chứng chỉ TESOL IV
+                                từ Học viện Ngôn ngữ Quốc tế Úc (Úc).</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 4. Bà Phạm Thị Thu Thảo -->
+            <div class="row align-items-start g-4 g-lg-5 pt-5 border-top mt-5">
+                <div class="col-md-4 col-lg-3">
+                    <div class="leader-image-wrapper">
+                        <img src="https://sns.edu.vn/wp-content/uploads/2026/04/Thao.png" alt="Bà Phạm Thị Thu Thảo"
+                            class="img-fluid rounded-2 shadow-sm">
+                    </div>
+                </div>
+                <div class="col-md-8 col-lg-9">
+                    <div class="leader-info">
+                        <h3 class="fw-bold text-dark mb-1">Bà Phạm Thị Thu Thảo</h3>
+                        <p class="text-muted fw-bold mb-4">Phó Hiệu trưởng Chuyên môn (Khối 1-12) trường St. Nicholas
+                        </p>
+                        <div class="leader-description text-secondary lh-lg">
+                            <p>Bà Phạm Thị Thu Thảo sở hữu 12 năm tận tâm cống hiến cho ngành giáo dục, với sự nghiệp
+                                nổi bật trong lĩnh vực lãnh đạo học thuật và quản lý chương trình. Trước khi đảm nhận
+                                vai trò hiện tại, bà từng giữ chức Phó Hiệu trưởng phụ trách Học thuật kiêm Trưởng khối
+                                MSHS tại Hệ thống Giáo dục Sky-Line. Hành trình chuyên môn của bà còn bao gồm kinh
+                                nghiệm quý báu với tư cách là Giáo viên môn Hóa học và Bí thư Đoàn Thanh niên Cộng sản
+                                Hồ Chí Minh tại trường THPT Chuyên Lê Quý Đôn, Quảng Trị.</p>
+                            <p>Triết lý giáo dục và lãnh đạo của TS. Thảo xoay quanh hai yếu tố cốt lõi: “Nuôi dưỡng Giá
+                                trị” và “Khai phóng Tiềm năng”. Bà cam kết xây dựng văn hóa trường học dựa trên trách
+                                nhiệm, sự chính trực và lòng biết ơn—những giá trị mà bà tin là nền tảng thiết yếu để
+                                nuôi dưỡng một môi trường nơi sự đổi mới được phát huy. Tầm nhìn của bà là thúc đẩy sự
+                                phát triển toàn diện, kiến tạo một môi trường làm việc tích cực, nơi mỗi thành viên đều
+                                được trao quyền để phát triển chuyên môn và đóng góp vào thành công chung của tổ chức.
+                            </p>
+                            <p>TS. Thảo sở hữu bằng Tiến sĩ và Thạc sĩ Hóa học tại Trường Đại học Khoa học và Trường Đại
+                                học Sư phạm thuộc Đại học Huế. Bà cũng tốt nghiệp Cử nhân Sư phạm Hóa học tại Trường Đại
+                                học Sư phạm – Đại học Huế.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 5. Bà Nguyễn Thị Huyền -->
+            <div class="row align-items-start g-4 g-lg-5 pt-5 border-top mt-5">
+                <div class="col-md-4 col-lg-3">
+                    <div class="leader-image-wrapper">
+                        <img src="https://sns.edu.vn/wp-content/uploads/2026/04/Ms-H.png" alt="Bà Nguyễn Thị Huyền"
+                            class="img-fluid rounded-2 shadow-sm">
+                    </div>
+                </div>
+                <div class="col-md-8 col-lg-9">
+                    <div class="leader-info">
+                        <h3 class="fw-bold text-dark mb-1">Bà Nguyễn Thị Huyền</h3>
+                        <p class="text-muted fw-bold mb-4">Hiệu trưởng Mầm non St. Nicholas</p>
+                        <div class="leader-description text-secondary lh-lg">
+                            <p>Với 17 năm kinh nghiệm dày dặn, bà Nguyễn Thị Huyền (Jenny) là một nhà giáo dục đầy tâm
+                                huyết, chuyên sâu trong lĩnh vực Giáo dục Mầm non. Lãnh đạo của bà là sự kết hợp hài hòa
+                                giữa năng lực sư phạm chuyên sâu và nền tảng tư duy phân tích từ tấm bằng Cử nhân Kinh
+                                tế Ngoại thương. Nền tảng đa dạng này giúp bà quản lý các cơ sở giáo dục với sự nhạy
+                                bén, cân bằng giữa chất lượng phát triển và hiệu quả vận hành tổ chức.</p>
+                            <p>Bà Huyền coi mỗi đứa trẻ là một “món quà” quý giá với tiềm năng độc đáo, chứ không phải
+                                một bình chứa kiến thức để lấp đầy. Triết lý của bà xem môi trường học tập là một “Xưởng
+                                sáng tạo của sự khám phá”—một không gian không giới hạn, nơi sự tò mò và trải nghiệm đa
+                                giác quan được nở rộ. Bà định nghĩa người giáo viên là những “nghệ sĩ của tâm hồn”, dùng
+                                tình yêu và sự thấu cảm để đồng hành cùng trẻ, cho phép các con tự do tạo nên những kiệt
+                                tác cuộc đời thay vì bắt trẻ đi theo khuôn mẫu có sẵn.</p>
+                            <p>Bà Huyền có bằng Thạc sĩ Giáo dục Mầm non tại Trường Đại học Sư phạm Hà Nội và bằng Cử
+                                nhân Giáo dục Mầm non tại Trường Đại học Hùng Vương. Năng lực chuyên môn của bà còn được
+                                củng cố bởi các chứng chỉ về Quản lý Giáo dục, Giáo dục Hòa nhập và Digital Marketing.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 6. Bà Nguyễn Thị Thu Hòa -->
+            <div class="row align-items-start g-4 g-lg-5 pt-5 border-top mt-5">
+                <div class="col-md-4 col-lg-3">
+                    <div class="leader-image-wrapper">
+                        <img src="https://sns.edu.vn/wp-content/uploads/2026/04/37009fcb-87fe-4c39-8cf8-ca6aef454c97.png"
+                            alt="Bà Nguyễn Thị Thu Hòa" class="img-fluid rounded-2 shadow-sm">
+                    </div>
+                </div>
+                <div class="col-md-8 col-lg-9">
+                    <div class="leader-info">
+                        <h3 class="fw-bold text-dark mb-1">Bà Nguyễn Thị Thu Hòa</h3>
+                        <p class="text-muted fw-bold mb-4">Phó Hiệu trưởng Mầm non St. Nicholas</p>
+                        <div class="leader-description text-secondary lh-lg">
+                            <p>Bà Nguyễn Thị Thu Hòa là một nhà lãnh đạo giáo dục dày dặn kinh nghiệm với một thập kỷ
+                                cống hiến cho ngành Mầm non. Trong suốt 10 năm qua, bà đã khẳng định uy tín qua sự tận
+                                tâm sâu sắc trong việc tạo ra môi trường phát triển cho trẻ thơ. Lãnh đạo của bà được
+                                định hình bởi sự cân bằng giữa tính nghiêm túc trong quản lý và niềm đam mê chân thành
+                                dành cho sự phát triển của trẻ nhỏ.
+                            </p>
+                            <p>Bắt nguồn từ sự thấu cảm và tôn trọng sâu sắc tiềm năng riêng biệt của mỗi đứa trẻ, bà
+                                Hòa ủng hộ tư tưởng “tự do trong khuôn khổ”. Bà tin rằng cần trao cho trẻ một không gian
+                                an toàn để khám phá và học hỏi từ những sai lầm, từ đó nuôi dưỡng sự tò mò tự nhiên của
+                                trẻ. Không chỉ tập trung vào sự phát triển của học sinh, bà còn cam kết xây dựng văn hóa
+                                trường học hạnh phúc, nơi trao quyền để giáo viên sáng tạo và truyền cảm hứng. Mục tiêu
+                                cuối cùng của bà là xây dựng nền tảng nhân cách và trí tuệ vững chắc, đảm bảo mỗi đứa
+                                trẻ khi rời trường không chỉ giàu kiến thức hơn mà còn giàu lòng trắc ẩn, tự tin và sẵn
+                                sàng bước ra thế giới.</p>
+                            <p>Bà Hòa sở hữu bằng Cử nhân Giáo dục Mầm non tại Trường Đại học Sư phạm – Đại học Đà Nẵng
+                                và Chứng chỉ Nghiệp vụ Quản lý Giáo dục Mầm non tại Trường Đại học Sư phạm – Đại học
+                                Huế.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end -->
+            
+        </div>
+        
+    </section>
+    <!-- end  -->
+    <!-- banner logo -->
+            <section class="partner-section py-4">
+                <div class="container">
+                    <!-- Đường kẻ trên -->
+                    <div class="partner-border-line"></div>
+
+                    <div class="row align-items-center justify-content-between py-4 px-md-5">
+                        <!-- Logo bên trái: University of Missouri -->
+                        <div class="col-6 col-md-5 text-center">
+                            <div class="partner-item">
+                                <img src="https://sns.edu.vn/wp-content/uploads/2021/03/MU_UniversitySig_vert_RGB-2048x782.png.webp"
+                                    alt="University of Missouri" class="img-fluid partner-logo-mizzou">
+                            </div>
+                        </div>
+
+                        <!-- Logo bên phải: Florida Virtual School -->
+                        <div class="col-6 col-md-5 text-center">
+                            <div class="partner-item d-flex align-items-center justify-content-center">
+                                <img src="https://sns.edu.vn/wp-content/uploads/2021/03/FLVS-logo.png.webp"
+                                    alt="Florida Virtual School" class="img-fluid partner-logo-flvs">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Đường kẻ dưới -->
+                    <div class="partner-border-line"></div>
+                </div>
+            </section>
+            <!-- end banner logo -->
+
+
+
+
+
+    <footer class="text-white py-5" style="background-color: #3e502c;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 mb-4">
+                    <img src="https://sns.edu.vn/wp-content/uploads/2026/03/LOGO-SNS-2025_green-dark-scaled-e1773720100248-768x357.png"
+                        height="100" class="ms-2">
+                </div>
+                <div class="col-lg-3 mb-4">
+                    <h5 class="fw-bold mb-3">TUYỂN SINH</h5>
+                    <hr border-bottom pb-2 style="width: 100px;">
+                    <ul class="list-unstyled small lh-lg">
+                        <li>Tại sao chọn SNS</li>
+                        <li>Quy trình đăng ký</li>
+                        <li>Học phí</li>
+                        <li>Tuyển dụng</li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <h5 class="fw-bold mb-3">HỆ ĐÀO TẠO</h5>
+                    <hr border-bottom pb-2 style="width: 100px;">
+                    <ul class="list-unstyled small lh-lg">
+                        <li>Hệ Mầm non</li>
+                        <li>Hệ Chuẩn Quốc tế</li>
+                        <li>Hệ Song ngữ Tích hợp</li>
+                        <li>Hệ Phổ thông tiếng Anh Mỹ nâng cao</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="text-center pt-4 border-top opacity-50 small">
+                Copyright 2026 © St. Nicholas
+            </div>
+        </div>
+    </footer>
+
+    <div class="social-contact-circles">
+        <a href="tel:0123456789" class="contact-item phone" title="Gọi điện">
+            <i class="fa-solid fa-phone"></i>
+        </a>
+        <a href="https://zalo.me/yourid" class="contact-item zalo" title="Chat Zalo">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Icon_of_Zalo.svg" alt="Zalo">
+        </a>
+        <button id="backToTop" class="contact-item scroll-top">
+            <i class="fa-solid fa-chevron-up"></i>
+        </button>
+    </div>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+
+</html>

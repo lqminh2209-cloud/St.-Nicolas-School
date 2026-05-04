@@ -1,222 +1,977 @@
 body {
-    background: #f6f6f6;
-    font-family: Arial;
-}
-
-
-.col_icon1 {
-    position: absolute;
-    bottom: 40%;
+  font-family: "Montserrat", sans-serif;
+  background: #f5f5f5;
 
 }
 
-.product-item {
-    padding-top: 100px;
+/* Colors */
+.text-green {
+  color: #4a6333;
+}
+.bg-light-cream {
+  background-color: #f7f3e8;
+}
+.bg-cream {
+  background-color: #fcfbf4;
 }
 
-.img-left {
-    width: 500px;
-
-    float: left;
+/* Navbar */
+.nav-link {
+  color: #333 !important;
+  padding: 0.5rem 1rem !important;
+}
+.dropdown-toggle::after {
+  vertical-align: middle;
 }
 
-.img-right {
-    width: 500px;
-    float: left;
+/* Hero Section */
+.hero-section {
+  height: 80vh;
+  min-height: 500px;
+  overflow: hidden;
+}
+.hero-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+.tracking-widest {
+  letter-spacing: 0.5rem;
+}
+.hero-footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(5px);
 }
 
-.image-logo {
-    float: left;
-    width: 100%;
-    border: 1px solid rgb(255, 195, 74);
+/* Program Cards */
+.program-card {
+  border: none;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+.program-card:hover {
+  transform: translateY(-10px);
 }
 
-.img-left img {
-    width: 100%;
-
+/* Utility */
+.cursor-pointer {
+  cursor: pointer;
+}
+.object-fit-cover {
+  object-fit: cover;
 }
 
-.img-right img {
-    width: 100%;
-
+/* Responsive adjustments */
+@media (max-width: 992px) {
+  .hero-section {
+    height: 60vh;
+  }
+  .hero-content h1 {
+    font-size: 2.5rem;
+  }
+}
+/* Tùy chỉnh Menu Đa Cấp */
+.dropdown-menu {
+  border: none;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  border-radius: 0;
+  padding: 0;
+  margin-top: 10px !important;
+}
+.dropdown-item {
+  padding: 12px 25px;
+  font-size: 13px;
+  border-bottom: 1px solid #f8f9fa;
+  transition: all 0.3s;
+}
+.dropdown-item:hover {
+  background-color: #4a6333;
+  color: white;
 }
 
-.img-footer {
-    width: 300px;
-
-
+/* Nút liên hệ nổi */
+.social-contact-circles {
+  position: fixed;
+  right: 25px;
+  bottom: 30px;
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
 
-.img-footer img {
-    width: 100%;
+.contact-item {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  border: none;
+  position: relative;
 }
 
-.widget-title {
-    font-size: 20px;
-    font-weight: 600;
-
-
+.contact-item.phone {
+  background: #e62117;
+  color: white;
+  font-size: 22px;
+  animation: pulse-red 2s infinite;
 }
 
-.textwidget {
-    font-size: 18px;
-
-
+.contact-item.zalo {
+  background: #0084ff;
+  padding: 10px;
+}
+.contact-item.zalo img {
+  width: 100%;
 }
 
-.textwidget a {
-    text-decoration: none;
+.contact-item.scroll-top {
+  background: #333;
+  color: white;
+  font-size: 18px;
+  visibility: hidden; /* Hiện ra khi cuộn xuống */
+  opacity: 0;
 }
 
-/* contact page */
+/* Hiệu ứng Hover */
+.contact-item:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Hiệu ứng rung nhẹ cho nút gọi */
+@keyframes pulse-red {
+  0% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(230, 33, 23, 0.7);
+  }
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 10px rgba(230, 33, 23, 0);
+  }
+  100% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(230, 33, 23, 0);
+  }
+}
+
+/* Hiển thị menu con khi hover (Chỉ áp dụng cho màn hình lớn hơn 1200px - xl) */
+/* Hỗ trợ hover cho cả menu chính và menu ngôn ngữ */
+@media (min-width: 1200px) {
+  .nav-item.dropdown:hover > .dropdown-menu,
+  .language-switcher:hover > .dropdown-menu {
+    display: block;
+    margin-top: 0;
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+    transition: all 0.3s ease;
+  }
+}
+
+/* Làm đẹp các mục trong dropdown ngôn ngữ */
+.language-switcher .dropdown-menu {
+  min-width: 150px;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 0;
+}
+
+.language-switcher .dropdown-item {
+  padding: 8px 20px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #333;
+}
+
+.language-switcher .dropdown-item:hover {
+  background-color: #f8f9fa;
+  color: #4a6333; /* Màu xanh chủ đạo của trường */
+}
+
+/* Hiệu ứng mượt mà khi menu hiện ra */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Đảm bảo người dùng có thể di chuột từ menu cha xuống menu con mà không bị mất dấu */
+.dropdown-menu {
+  border-top: 3px solid transparent;
+}
+/* responsive menu */
+/* Tùy chỉnh Sidebar trượt */
+.offcanvas {
+  width: 320px !important; /* Độ rộng sidebar */
+  background-color: #ffffff;
+}
+
+.offcanvas-body .nav-link {
+  color: #333 !important;
+  font-weight: 700;
+  font-size: 0.9rem;
+  letter-spacing: 0.5px;
+}
+
+.offcanvas-body .nav-link:hover {
+  color: #4a6333 !important; /* Màu xanh của trường */
+}
+
+/* Hiệu ứng mũi tên quay khi mở dropdown */
+.dropdown-toggle::after {
+  transition: transform 0.3s ease;
+}
+.show.dropdown-toggle::after {
+  transform: rotate(180deg);
+}
+
+/* Xóa border cuối cùng */
+.navbar-nav .nav-item:last-child {
+  border-bottom: none !important;
+}
+
+/* Nút tìm kiếm tròn */
+.input-group input:focus {
+  box-shadow: none;
+  background-color: #f8f9fa;
+}
+/* 1. Xử lý đường kẻ chỉ hiện trên Mobile */
+@media (max-width: 1199.98px) {
+  .border-bottom-mobile {
+    border-bottom: 1px solid #eee;
+  }
+  .offcanvas-body .nav-link {
+    padding: 15px 0 !important;
+  }
+}
+
+/* 2. Style cho máy tính (Từ 1200px trở lên) */
+@media (min-width: 1200px) {
+  /* Ép Offcanvas hiển thị như thanh menu bình thường */
+  .offcanvas {
+    position: static !important;
+    visibility: visible !important;
+    transform: none !important;
+    width: auto !important;
+    background: none !important;
+    border: none !important;
+    flex-grow: 1;
+  }
+  .offcanvas-header {
+    display: none;
+  }
+
+  /* Hiệu ứng Hover mở menu trên máy tính */
+  .navbar-nav .nav-item.dropdown:hover > .dropdown-menu {
+    display: block;
+    margin-top: 0;
+  }
+
+  .navbar-nav .nav-link {
+    padding-right: 15px !important;
+    padding-left: 15px !important;
+  }
+}
+
+/* 3. Style riêng cho Sidebar (Dưới 1200px) */
+@media (max-width: 1199.98px) {
+  .offcanvas {
+    width: 300px !important;
+  }
+  .language-switcher .dropdown-toggle {
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    margin-top: 10px;
+  }
+}
+/* search overay */
+/* Tùy chỉnh CSS cho SNS Search Overlay */
+.sns-search-overlay {
+  display: none; /* Ẩn mặc định */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.85); /* Nền mờ tối, sang trọng */
+  z-index: 10000; /* Cao hơn menu và mọi thứ khác */
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.4s ease; /* Hiệu ứng chuyển động mượt */
+  justify-content: center;
+  align-items: center;
+  display: flex; /* Dùng flex để căn giữa form */
+  flex-direction: column;
+}
+
+/* Class active để mở menu thông qua JS */
+.sns-search-overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Nút đóng (X) góc phải */
+.close-search-wrapper {
+  position: absolute;
+  top: 30px;
+  right: 40px;
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
+  opacity: 0.7;
+  transition: all 0.3s ease;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+}
+
+.close-search-wrapper:hover {
+  opacity: 1;
+  transform: rotate(90deg);
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Vùng chứa form ở giữa */
+.search-content-wrapper {
+  width: 60%; /* Độ rộng form tìm kiếm */
+  max-width: 800px;
+  text-align: center;
+  transform: translateY(30px); /* Hiệu ứng trượt lên */
+  transition: transform 0.4s ease;
+}
+
+.sns-search-overlay.active .search-content-wrapper {
+  transform: translateY(0); /* Trượt về vị trí cũ */
+}
+
+/* Form tìm kiếm phong cách SNS */
+.input-with-icon {
+  position: relative;
+  width: 100%;
+}
+
+.search-icon-inside {
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #888;
+  font-size: 20px;
+}
+
+.search-content-wrapper input[type="text"] {
+  width: 100%;
+  padding: 20px 20px 20px 60px; /* Padding trái lớn hơn cho icon */
+  font-size: 18px;
+  border: none;
+  background-color: white;
+  color: #333;
+  border-radius: 10px; /* Bo góc mượt */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); /* Đổ bóng */
+  outline: none;
+}
+
+.search-content-wrapper input[type="text"]:focus {
+  box-shadow: 0 10px 40px rgba(74, 99, 51, 0.4); /* Đổ bóng màu xanh chủ đạo của trường */
+}
+/* end search overlay */
+/* end responsive menu */
+/* College_Board.html */
+:root {
+  --sns-green: #4a6333;
+  --sns-dark-green: #3e502c;
+  --sns-cream: #fdfaf1;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  color: #333;
+}
+
+/* Menu Hover logic */
+@media (min-width: 1200px) {
+  .navbar-nav .nav-item.dropdown:hover > .dropdown-menu {
+    display: block;
+    margin-top: 0;
+  }
+}
+
+.bg-sns-green {
+  background-color: var(--sns-green);
+}
+
+.text-sns-green {
+  color: var(--sns-green);
+}
+
+/* Page Content Styles */
 .section-title {
-    font-weight: 600;
-    color: #4d6b57;
-    margin-bottom: 20px;
+  font-weight: 700;
+  position: relative;
+  padding-bottom: 15px;
+  margin-bottom: 30px;
+}
 
+.section-title::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 60px;
+  height: 3px;
+  background-color: var(--sns-green);
+}
+
+.ap-card {
+  border: none;
+  border-radius: 15px;
+  transition: transform 0.3s ease;
+}
+
+.ap-card:hover {
+  transform: translateY(-5px);
+}
+
+.info-contact-box {
+  border-left: 4px solid var(--sns-green);
+  background: #f8f9fa;
+  padding: 20px;
+}
+/* end College_Board.html */
+/* tu vấn du học */
+/* Màu sắc chủ đạo */
+:root {
+  --sns-green: #4a6333; /* Màu xanh lá đặc trưng SNS */
+  --sns-gold: #c5a059;
+}
+
+.text-success {
+  color: var(--sns-green) !important;
+}
+
+.bg-success {
+  background-color: var(--sns-green) !important;
+}
+
+.btn-success {
+  background-color: var(--sns-green);
+  border-color: var(--sns-green);
+}
+
+.btn-success:hover {
+  background-color: #3a4d28;
+  border-color: #3a4d28;
+}
+
+/* Thanh gạch ngang trang trí */
+.divider-green {
+  width: 60px;
+  height: 4px;
+  background-color: var(--sns-gold);
+  border-radius: 2px;
+}
+
+/* Style cho Form */
+.registration-form .card {
+  transition: transform 0.3s ease;
+}
+
+.registration-form .form-control,
+.registration-form .form-select {
+  border: 1px solid #dee2e6;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.registration-form .form-control:focus {
+  border-color: var(--sns-green);
+  box-shadow: 0 0 0 0.25rem rgba(74, 99, 51, 0.15);
+}
+
+/* Hiệu ứng bo tròn ảnh */
+.img-fluid.rounded-4 {
+  border-radius: 20px !important;
+}
+/* end tu vấn du học */
+/* tin tuc */
+/* Tùy chỉnh cho trang Tin Tức */
+.featured-img {
+  height: 450px;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.main-news-card:hover .featured-img {
+  transform: scale(1.05);
+}
+
+.hover-success:hover {
+  color: #4a6333 !important; /* Màu xanh SNS */
+}
+
+.side-img {
+  width: 90px;
+  height: 70px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.small-title {
+  display: -webkit-box;
+  /* -webkit-line-clamp: 2; */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  line-height: 1.4;
+  transition: color 0.3s;
+}
+
+.small-title:hover {
+  color: #4a6333 !important;
+}
+
+.side-news-list .d-flex {
+  border-bottom: 1px dashed #eee;
+  padding-bottom: 15px;
+}
+
+.side-news-list .d-flex:last-child {
+  border-bottom: none;
+}
+
+/* Hiệu ứng Responsive cho mobile */
+@media (max-width: 768px) {
+  .featured-img {
+    height: 250px;
+  }
+}
+/* tin tuc */
+/* Container ảnh để xử lý hiệu ứng Zoom */
+.card-img-wrapper {
+  position: relative;
+  overflow: hidden;
+  height: 220px;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+}
+
+.card-img-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+/* Hiệu ứng Zoom khi hover vào Card */
+.custom-card:hover .card-img-wrapper img {
+  transform: scale(1.1);
+}
+
+.custom-card {
+  transition: all 0.3s ease;
+  border-radius: 10px;
+}
+
+.custom-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Hiển thị ngày tháng đè lên ảnh */
+.post-date {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  background-color: #4a6333; /* Màu xanh SNS */
+  color: white;
+  padding: 5px 12px;
+  border-radius: 5px;
+  text-align: center;
+  line-height: 1;
+  z-index: 2;
+}
+
+.post-date .day {
+  display: block;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.post-date .month {
+  font-size: 10px;
+  text-transform: uppercase;
+}
+
+/* Màu chữ khi hover tiêu đề */
+.title-hover:hover {
+  color: #4a6333 !important;
+}
+
+/* Giới hạn tiêu đề tối đa 2 dòng */
+.card-title {
+  display: -webkit-box;
+  /* -webkit-line-clamp: 2; */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  height: 3rem; /* Đảm bảo các card đều nhau */
+}
+/* Custom Pagination Style */
+.custom-pagination .page-item {
+  margin: 0 5px; /* Khoảng cách giữa các nút */
+}
+
+.custom-pagination .page-link {
+  border: none;
+  color: #4a6333; /* Màu xanh SNS */
+  font-weight: bold;
+  border-radius: 8px !important; /* Bo góc */
+  padding: 10px 18px;
+  background-color: #f8f9fa;
+  transition: all 0.3s ease;
+}
+
+/* Hiệu ứng khi di chuột (Hover) */
+.custom-pagination .page-link:hover {
+  background-color: #ffc107; /* Màu vàng khi hover */
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+/* Trạng thái trang đang chọn (Active) */
+.custom-pagination .page-item.active .page-link {
+  background-color: #4a6333 !important; /* Nút đang chọn màu xanh đậm */
+  color: white;
+  box-shadow: 0 4px 10px rgba(74, 99, 51, 0.3);
+}
+
+/* Nút bị vô hiệu hóa (Disabled) */
+.custom-pagination .page-item.disabled .page-link {
+  background-color: #eee;
+  color: #ccc;
+}
+/* lien hệ */
+
+
+.section-title {
+  font-weight: 600;
+  color: #4d6b57;
+  margin-bottom: 20px;
 }
 
 .form-control,
 .form-select {
-    border-radius: 4px;
-
-
+  border-radius: 4px;
 }
 
 .btn-send {
-    color: #ffffff;
-    background-color: #4d6b57;
-    border-radius: 4px;
-
+  background-color: #4d6b57;
+  color: white;
+  border-radius: 4px;
 }
 
 .btn-send:hover {
-    background-color: #3c5445;
-
+  background-color: #3c5445;
 }
 
-.accodion-button {
-    font-weight: 500;
-    color: #3c5445;
-
+.accordion-button {
+  font-weight: 500;
+  color: #3c5445;
 }
 
 .accordion-button:not(.collapsed) {
-    background-color: #ffffff;
-    color: #3c5445;
+  background-color: #eaf1ec;
+  color: #3c5445;
 }
 
 .box {
-    background-color: white;
-    padding: 25px;
-    border-radius: 6px;
-    box-shadow: 0 2px 6px rgb(29, 29, 29);
+  background: white;
+  padding: 25px;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+/* Màu sắc thương hiệu */
+.text-success-dark {
+    color: #4a6333;
 }
 
-/* Slide-content skill english */
-.news-section {
-    padding: 70px 0;
+.text-success {
+    color: #4a6333 !important;
 }
 
-.news-card {
-    background: #fff;
-    border: none;
-    overflow: hidden;
-    transition: .4s;
-    box-shadow: 0 5px 18px rgba(0, 0, 0, .08);
-    height: 100%;
+/* Kiểu chữ cho phần liên hệ */
+.contact-details li {
+    font-size: 1.1rem;
+    color: #444;
 }
 
-.news-card:hover {
-    transform: translateY(-8px);
+.contact-details i {
+    font-size: 1.2rem;
+    width: 25px;
 }
 
-.image-box {
-    position: relative;
-    overflow: hidden;
+/* Badge "LIÊN HỆ" giống trong hình */
+.badge.border {
+    border-color: #dee2e6 !important;
+    letter-spacing: 1px;
+    border-radius: 0;
 }
 
-.image-box img {
-    width: 100%;
-    height: 295px;
-    object-fit: cover;
-    transition: .5s;
+/* Tăng hiệu ứng cho bản đồ */
+.map-wrapper {
+    transition: box-shadow 0.3s ease;
 }
 
-.news-card:hover img {
-    transform: scale(1.06);
+.map-wrapper:hover {
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1) !important;
 }
 
-.date-badge {
-    position: absolute;
-    top: 18px;
-    left: 18px;
-    width: 68px;
-    height: 68px;
+/* Đảm bảo bản đồ co giãn tốt trên mobile */
+@media (max-width: 991px) {
+    .map-wrapper iframe {
+        height: 300px;
+    }
+}
+/* end lien he */
+/* gioi thieu */
+/* Trang Giới thiệu tổng thể */
+.about-hero {
+    height: 400px;
+}
+
+.icon-circle {
+    width: 70px;
+    height: 70px;
     border-radius: 50%;
-    background: #446b9d;
-    color: white;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-weight: 700;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, .2);
-}
-
-.date-badge span:first-child {
     font-size: 28px;
-    line-height: 24px;
 }
 
-.date-badge span:last-child {
-    font-size: 15px;
+.core-value-card {
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    border-radius: 15px;
 }
 
-.card-body {
-    padding: 30px;
-    text-align: center;
+.core-value-card.active {
+    background-color: #4a6333; /* Màu xanh SNS */
+    color: white;
 }
 
-.news-title {
-    font-size: 28px;
-    font-weight: 700;
-    text-transform: uppercase;
-    line-height: 1.4;
-    color: #2d3b55;
+.core-value-card:hover {
+    transform: translateY(-10px);
+}
+
+.core-value-card.active p {
+    color: rgba(255,255,255,0.8) !important;
+}
+
+/* Hiệu ứng trượt cho ảnh */
+.img-fluid {
+    transition: 0.5s ease;
+}
+
+.img-fluid:hover {
+    transform: scale(1.02);
+}
+
+@media (max-width: 768px) {
+    .about-hero {
+        height: 250px;
+    }
+}
+/* end gioi thieu */
+/* equest content */
+.page-header {
+    /* Màu xanh đen đặc trưng của EQuest */
+    background-color: #1a2938; 
+    min-height: 250px;
+}
+
+.letter-spacing-1 {
+    letter-spacing: 2px;
+    font-weight: 600;
 }
 
 .divider {
-    width: 45px;
-    height: 3px;
-    background: #ddd;
-    margin: 20px auto;
-}
-
-.news-text {
-    font-size: 22px;
-    line-height: 1.7;
-    color: #6d6d6d;
-}
-
-.carousel-control-prev,
-.carousel-control-next {
     width: 60px;
+    height: 3px;
+    background-color: rgba(255, 255, 255, 0.3); /* Đường kẻ mờ màu trắng */
+    border-radius: 2px;
 }
 
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-    background-color: rgba(0, 0, 0, .4);
+/* Tùy chỉnh tiêu đề h1 để trông chuyên nghiệp hơn */
+.page-header h1 {
+    font-size: 2.5rem;
+    line-height: 1.2;
+}
+
+@media (max-width: 768px) {
+    .page-header h1 {
+        font-size: 1.8rem;
+    }
+}
+/* end */
+/* content equest*/
+/* Khung nội dung chính */
+.content-box {
+    border: 1px solid #e0e0e0;
+    transition: transform 0.3s ease;
+}
+
+/* Hiệu ứng bóng đổ mềm mại chuyên nghiệp */
+.shadow-lg {
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.08) !important;
+}
+
+/* Định dạng tiêu đề */
+.equest-detailed-content h3 {
+    color: #2c3e50;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.equest-detailed-content h3::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50px;
+    height: 3px;
+    background-color: #4a6333; /* Màu xanh thương hiệu */
+}
+
+/* Nội dung chữ */
+.lh-lg {
+    line-height: 1.8;
+    text-align: justify;
+}
+
+.text-secondary {
+    color: #555 !important;
+}
+
+/* Danh sách năng lực cốt lõi */
+.core-competencies li p strong {
+    color: #333;
+    font-weight: 600;
+}
+
+.badge {
+    padding: 0.5em;
     border-radius: 50%;
-    padding: 25px;
+}
+/* end  */
+/* form bình luận */
+/* Màu xanh đen của nút bấm giống ảnh */
+.btn-dark-blue {
+    background-color: #4e6683;
+    color: white;
+    border: none;
+    border-radius: 2px; /* Bo góc nhẹ theo kiểu nút trong ảnh */
+    transition: background 0.3s ease;
 }
 
-@media(max-width:992px) {
-    .news-title {
-        font-size: 22px;
+.btn-dark-blue:hover {
+    background-color: #3d5168;
+    color: #ffffff;
+}
+
+/* Tùy chỉnh các ô input */
+.comment-box .form-control {
+    border: 1px solid #ced4da;
+    border-radius: 2px;
+    padding: 10px 15px;
+}
+
+.comment-box .form-control:focus {
+    background-color: #fff;
+    border-color: #4e6683;
+    box-shadow: 0 0 0 0.25rem rgba(78, 102, 131, 0.1);
+}
+
+/* Khoảng cách giữa các nhãn và ô nhập */
+.form-label {
+    font-size: 0.95rem;
+    margin-bottom: 8px;
+}
+
+/* Hiệu ứng bóng đổ nhẹ cho khung bình luận */
+.comment-box {
+    border: 1px solid rgba(0,0,0,0.05);
+}
+/* end form bình luận */
+/* ban giam hiệu */
+/* Màu xanh đặc trưng của trường St. Nicholas */
+.text-success-dark {
+    color: #4a6333 !important;
+}
+
+/* Khoảng cách chữ cho tiêu đề */
+.letter-spacing-2 {
+    letter-spacing: 2px;
+}
+
+/* Định dạng nội dung văn bản */
+.leader-description {
+    font-size: 1.05rem;
+    text-align: justify;
+}
+
+.leader-info h3 {
+    font-size: 1.75rem;
+}
+
+/* Đảm bảo hình ảnh lãnh đạo sắc nét và vừa vặn */
+.leader-image-wrapper img {
+    width: 100%;
+    object-fit: cover;
+    border: 1px solid #eee;
+}
+
+/* Responsive cho thiết bị di động */
+@media (max-width: 767.98px) {
+    .leadership-section h2 {
+        font-size: 1.5rem;
+    }
+    
+    .leader-info {
+        text-align: center;
+    }
+    
+    .leader-description {
+        text-align: left;
     }
 
-    .news-text {
-        font-size: 18px;
+    .leader-image-wrapper {
+        max-width: 250px;
+        margin: 0 auto 20px;
     }
 }
+/* banner logo */
+/* Đường kẻ màu vàng cam đặc trưng */
+.partner-border-line {
+    width: 100%;
+    height: 1px;
+    background-color: #f1b346; /* Màu cam vàng từ hình ảnh */
+}
+/* end banner logo */
+/* end ban giám hiệu */

@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The St. Nicholas School - Giao diện mẫu</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Search Overlay -->
+    <div id="search-overlay" class="sns-search-overlay">
+        <div class="close-search-wrapper" id="close-search">
+            <i class="fa-solid fa-xmark"></i>
+        </div>
+
+        <div class="search-content-wrapper">
+            <form action="/search" method="get" class="search-form-flex">
+                <div class="input-with-icon">
+                    <i class="fa-solid fa-magnifying-glass search-icon-inside"></i>
+                    <input type="text" name="q" placeholder="Nhập từ khóa tìm kiếm tại St. Nicholas..." autofocus
+                        id="search-input">
+                </div>
+            </form>
+            <p class="search-tip text-white-50 small mt-3">Nhấn 'Enter' để tìm kiếm hoặc 'Esc' để đóng.</p>
+        </div>
+    </div>
+    <!-- end Search Overlay -->
+    <nav class="navbar navbar-expand-xl navbar-light bg-white sticky-top py-3 border-bottom">
+        <div class="container-fluid px-4">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="https://sns.edu.vn/wp-content/uploads/2026/03/LOGO-SNS-2025-e1773720149194-1400x622.png"
+                    alt="SNS Logo" height="70">
+            </a>
+
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar">
+                <div class="offcanvas-header border-bottom d-xl-none">
+                    <h5 class="offcanvas-title fw-bold text-success">MENU SNS</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+                </div>
+
+                <div class="offcanvas-body">
+                    <div class="d-xl-none mb-4">
+                        <div class="input-group border rounded-pill overflow-hidden">
+                            <input type="text" class="form-control border-0 px-3" placeholder="Tìm kiếm...">
+                            <button class="btn btn-light border-0"><i class="fa-solid fa-magnifying-glass"></i></button>
+                        </div>
+                    </div>
+
+                    <ul class="navbar-nav mx-auto text-uppercase fw-bold small">
+                        <li class="nav-item dropdown border-bottom-mobile">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Giới thiệu</a>
+                            <ul class="dropdown-menu border-0 shadow-sm">
+                                <li><a class="dropdown-item" href="gioithieu.html">St.Nicholas – Trường chuẩn quốc tế Mỹ
+                                        tại Đà
+                                        Nẵng</a></li>
+                                <li><a class="dropdown-item" href="gioithieu.html">Tầm nhìn & Sứ mệnh</a></li>
+                                <li><a class="dropdown-item" href="equest.html">Giới Thiệu Tập Đoàn Giáo Dục EQuest</a>
+                                </li>
+                                <li><a class="dropdown-item" href="bangiamhieu.html">Ban Giám hiệu</a></li>
+                                <li><a class="dropdown-item" href="#">Cơ quan kiểm định chất lượng và đối tác</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item dropdown border-bottom-mobile">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Hệ đào tạo</a>
+                            <ul class="dropdown-menu border-0 shadow-sm">
+                                <li><a class="dropdown-item" href="#">Hệ Mầm non</a></li>
+                                <li><a class="dropdown-item" href="#">Hệ Chuẩn Quốc tế</a></li>
+                                <li><a class="dropdown-item" href="#">Hệ Song ngữ Tích hợp</a></li>
+                                <li><a class="dropdown-item" href="#">Hệ Phổ thông tiếng Anh Mỹ nâng cao</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item border-bottom-mobile"><a class="nav-link" href="College_Board.html">College
+                                Board</a></li>
+                        <li class="nav-item border-bottom-mobile"><a class="nav-link" href="tuvan_duhoc.html">Tư vấn du
+                                học</a></li>
+                        <li class="nav-item dropdown border-bottom-mobile">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Tuyển sinh</a>
+                            <ul class="dropdown-menu border-0 shadow-sm">
+                                <li><a class="dropdown-item" href="#">Tại sao chọn SNS</a></li>
+                                <li><a class="dropdown-item" href="#">Quy trình đăng ký</a></li>
+                                <li><a class="dropdown-item" href="#">Học phí</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item dropdown border-bottom-mobile">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">C.E.P</a>
+                            <ul class="dropdown-menu border-0 shadow-sm">
+                                <li><a class="dropdown-item" href="#">Dã ngoại</a></li>
+                                <li><a class="dropdown-item" href="#">Câu lạc bộ</a></li>
+                                <li><a class="dropdown-item" href="#">Thể thao</a></li>
+                                <li><a class="dropdown-item" href="#">Hội đồng học sinh</a></li>
+                                <li><a class="dropdown-item" href="#">Hoạt động cộng đồng</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item dropdown border-bottom-mobile">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Học đường</a>
+                            <ul class="dropdown-menu border-0 shadow-sm">
+                                <li><a class="dropdown-item" href="#">Lịch năm học</a></li>
+                                <li><a class="dropdown-item" href="#">Cơ sở vật chất</a></li>
+                                <li><a class="dropdown-item" href="#">Tư vấn</a></li>
+                                <li><a class="dropdown-item" href="#">Dinh dưỡng</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item border-bottom-mobile"><a class="nav-link" href="tintuc.html">Tin tức</a>
+                        </li>
+                        <li class="nav-item border-bottom-mobile"><a class="nav-link" href="lienhe.html">Liên hệ</a>
+                        </li>
+                    </ul>
+
+                    <div class="d-flex flex-column flex-xl-row align-items-start align-items-xl-center mt-3 mt-xl-0">
+                        <div class="dropdown language-switcher me-xl-3 w-100 w-xl-auto">
+                            <a class="text-decoration-none text-dark fw-bold small dropdown-toggle d-flex justify-content-between align-items-center p-2 p-xl-0"
+                                href="#" id="langDropdown" data-bs-toggle="dropdown">
+                                <span>VN <img src="https://sns.edu.vn/wp-content/plugins/polylang/flags/vn.png"
+                                        width="18" class="ms-1"></span>
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-end shadow-sm">
+                                <li>
+                                    <a class="dropdown-item d-flex align-items-center justify-content-between" href="#">
+                                        TIẾNG VIỆT <img
+                                            src="https://sns.edu.vn/wp-content/plugins/polylang/flags/vn.png"
+                                            width="18">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item d-flex align-items-center justify-content-between" href="#">
+                                        ENGLISH <img src="https://sns.edu.vn/wp-content/plugins/polylang/flags/us.png"
+                                            width="18">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item d-flex align-items-center justify-content-between" href="#">
+                                        한국어 <img src="https://sns.edu.vn/wp-content/plugins/polylang/flags/kr.png"
+                                            width="18">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <i class="fa-solid fa-magnifying-glass fs-5 cursor-pointer d-none d-xl-block"></i>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- equets content -->
+    <section class="page-header py-5 d-flex align-items-center justify-content-center text-center">
+        <div class="container py-4">
+            <!-- Phần nhãn nhỏ phía trên -->
+            <p class="text-uppercase mb-2 letter-spacing-1 small text-light opacity-75">
+                Tin tức & Sự kiện
+            </p>
+
+            <!-- Tiêu đề chính -->
+            <h1 class="fw-bold text-white mb-3">
+                Giới Thiệu Tập Đoàn Giáo Dục EQuest
+            </h1>
+
+            <!-- Dấu gạch ngang trang trí -->
+            <div class="divider mx-auto"></div>
+        </div>
+    </section>
+    <!-- end -->
+    <!-- content -->
+    <section class="equest-detailed-content py-5">
+        <div class="container">
+            <!-- Bắt đầu khung nội dung chính có Box Shadow -->
+            <div class="content-box shadow-lg rounded-4 p-4 p-md-5 border bg-white">
+
+                <!-- PHẦN 1: GIỚI THIỆU -->
+                <div class="intro-section mb-5">
+                    <h4 class="fst-italic text-success-emphasis fw-bold mb-3">
+                        The Quest for Excellence – Vươn tới sự hoàn thiện
+                    </h4>
+                    <p class="text-secondary lh-lg">
+                        Được thành lập vào năm 2003 bởi các nhà giáo dục từng tu nghiệp tại Hoa Kỳ, Anh, Úc và Đức, Tập
+                        đoàn Giáo dục EQuest phát triển dựa trên ba nguyên tắc: đổi mới, vượt trội và cống hiến. Với
+                        niềm tin giáo dục là con đường bền vững nhất để thay đổi tương lai của mỗi cá nhân, cũng như cả
+                        một quốc gia, EQuest đã và đang không ngừng nỗ lực góp phần thúc đẩy sự đổi mới, nâng tầm chất
+                        lượng của giáo dục Việt Nam.
+                    </p>
+                    <h4 class="fw-bold text-dark mt-4 mb-3">Hệ sinh thái giáo dục toàn diện</h4>
+                    <p class="text-secondary lh-lg">
+                        EQuest hiện là một trong những tổ chức giáo dục tư nhân hàng đầu tại Việt Nam, sở hữu hệ sinh
+                        thái trải rộng trên ba lĩnh vực: Giáo dục Phổ thông (K-12), Giáo dục Đại học & Cao đẳng (C&U) và
+                        Công nghệ Giáo dục (EdTech). Tính đến năm 2025, EQuest đang vận hành 25 cơ sở giáo dục trên toàn
+                        quốc, phục vụ gần 20.000 học sinh phổ thông, 10.000 sinh viên đại học và cao đẳng (trong đó có
+                        hơn 300 sinh viên quốc tế đến từ nhiều quốc gia), cùng hơn 180.000 học sinh theo học chương
+                        trình STEM và sử dụng nền tảng công nghệ giáo dục.
+                    </p>
+                    <br>
+                    <p class="text-secondary lh-lg">
+                        Chúng tôi tự hào là tổ chức giáo dục tư nhân đầu tiên tại Việt Nam đạt kiểm định chất lượng toàn
+                        diện từ Cognia (Hoa Kỳ) – tổ chức kiểm định giáo dục lớn nhất thế giới, khẳng định cam kết vững
+                        chắc với các chuẩn mực quốc tế.
+                    </p>
+                    <br>
+                    <p class="text-secondary lh-lg">
+                        Đồng hành cùng EQuest trên hành trình phát triển là các nhà đầu tư chiến lược toàn cầu, như KKR
+                        – một trong những tập đoàn đầu tư lớn nhất thế giới, và VOI (Vietnam Oman Investment) – quỹ đầu
+                        tư quốc gia của Oman tại Việt Nam. Sự hợp tác này không chỉ mang đến sự hỗ trợ về nguồn lực và
+                        chuyên môn, mà còn góp phần định hình tầm nhìn dài hạn, bảo đảm cho sự phát triển bền vững cùng
+                        khả năng mở rộng mạnh mẽ của EQuest trong lĩnh vực giáo dục.
+                    </p>
+                </div>
+
+                <hr class="my-5 opacity-25">
+
+                <!-- PHẦN 2: CAM KẾT  -->
+                <div class="commitment-section mb-5">
+                    <h3 class="fw-bold text-dark mb-4">Cam kết của chúng tôi</h3>
+                    <p class="text-secondary lh-lg mb-4">
+                        Với EQuest, giáo dục không chỉ truyền tải tri thức, mà còn là hành trình xây dựng năng lực, phẩm
+                        chất và tư duy độc lập cho người học. Chúng tôi tin rằng, một nền giáo dục gắn liền với thực
+                        tiễn, chú trọng phát triển con người toàn diện chính là chìa khóa giúp thế hệ trẻ Việt Nam hội
+                        nhập quốc tế và đóng góp tích cực cho cộng đồng.
+                    </p>
+                    <p class="text-secondary lh-lg">
+                        Tất cả chương trình đào tạo tại EQuest được thiết kế dựa trên tiêu chuẩn quốc tế, ứng dụng công
+                        nghệ hiện đại, hướng đến sự phát triển toàn diện cả về học thuật, kỹ năng và thái độ sống. Chúng
+                        tôi kiên định với mục tiêu dài hạn: đầu tư vào con người là cách đầu tư vào tương lai của quốc
+                        gia.
+                    </p>
+                </div>
+
+                <!-- PHẦN 3: PHÁT TRIỂN NHÂN TÀI & NĂNG LỰC CỐT LÕI  -->
+                <div class="talent-section">
+                    <h3 class="fw-bold text-dark mb-4">Phát triển nhân tài</h3>
+                    <p class="text-secondary lh-lg mb-4">
+                        Tại EQuest, con người là tài sản quan trọng nhất. Chúng tôi tin rằng việc trao quyền, đồng hành
+                        và không ngừng đầu tư vào đội ngũ chính là con đường bền vững để tổ chức phát triển lâu dài.
+                    </p>
+                    <p class="text-secondary lh-lg mb-4">
+                        Với tôn chỉ “Vươn tới sự hoàn thiện”, chúng tôi xây dựng một môi trường chuyên nghiệp và học tập
+                        suốt đời, nơi mỗi thành viên không chỉ trưởng thành về chuyên môn, mà còn được truyền cảm hứng
+                        để trở thành phiên bản tốt hơn của chính mình, là đại diện xứng đáng cho giá trị EQuest.
+                    </p>
+                    <p class="text-secondary lh-lg mb-4">
+                        Để làm được điều đó, đội ngũ EQuest không ngừng rèn luyện <strong>5 năng lực cốt lõi</strong>:
+                    </p>
+
+                    <ul class="list-unstyled core-competencies">
+                        <li class="mb-3 d-flex align-items-start">
+                            <span class="badge bg-success me-3 mt-1"><i class="bi bi-check2"></i></span>
+                            <p class="text-secondary mb-0"><strong>Sử dụng Tiếng Anh:</strong> Là tập đoàn hoạt động
+                                trong môi trường song ngữ, khả năng sử dụng tiếng Anh là một yêu cầu bắt buộc đối với
+                                tất cả nhân viên EQuest.</p>
+                        </li>
+                        <li class="mb-3 d-flex align-items-start">
+                            <span class="badge bg-success me-3 mt-1"><i class="bi bi-check2"></i></span>
+                            <p class="text-secondary mb-0"><strong>Ứng dụng Trí tuệ nhân tạo (AI):</strong> Nắm vững và
+                                sử dụng thành thạo công cụ công nghệ, đặc biệt là AI để tối ưu hiệu suất và đổi mới
+                                trong công việc.</p>
+                        </li>
+                        <li class="mb-3 d-flex align-items-start">
+                            <span class="badge bg-success me-3 mt-1"><i class="bi bi-check2"></i></span>
+                            <p class="text-secondary mb-0"><strong>Tác phong chuyên nghiệp:</strong> Luôn thể hiện hình
+                                ảnh chỉnh chu, tôn trọng đồng nghiệp và môi trường làm việc.</p>
+                        </li>
+                        <li class="mb-3 d-flex align-items-start">
+                            <span class="badge bg-success me-3 mt-1"><i class="bi bi-check2"></i></span>
+                            <p class="text-secondary mb-0"><strong>Sức khỏe và thể lực:</strong> Duy trì thể chất cùng
+                                tinh thần khỏe mạnh, thích ứng linh hoạt với sự phát triển nhanh chóng của tập đoàn và
+                                xã hội.</p>
+                        </li>
+                        <li class="mb-3 d-flex align-items-start">
+                            <span class="badge bg-success me-3 mt-1"><i class="bi bi-check2"></i></span>
+                            <p class="text-secondary mb-0"><strong>Học tập và phát triển bản thân liên tục:</strong>
+                                Không ngừng học hỏi để làm mới tư duy, mở rộng năng lực và thích nghi kịp thời với mọi
+                                thay đổi.</p>
+                        </li>
+                    </ul>
+                </div>
+
+            </div> <!-- Kết thúc content-box -->
+        </div>
+    </section>
+    <!-- end -->
+    <!-- form bình luận -->
+    <section class="comment-section py-5 bg-light">
+        <div class="container">
+            <!-- Khung bao ngoài đồng bộ với phần nội dung chữ -->
+            <div class="comment-box shadow-sm rounded-4 p-4 p-md-5 bg-white border">
+                <h3 class="fw-bold text-dark mb-2">Để lại một bình luận</h3>
+                <p class="text-muted small mb-4">Email của bạn sẽ không được hiển thị công khai. Các trường bắt buộc
+                    được đánh dấu *</p>
+
+                <form action="#" method="post">
+                    <!-- Ô nhập nội dung bình luận -->
+                    <div class="mb-4">
+                        <label for="comment" class="form-label fw-bold text-secondary">Bình luận *</label>
+                        <textarea class="form-control bg-light" id="comment" name="comment" rows="6"
+                            required></textarea>
+                    </div>
+
+                    <!-- Hàng nhập thông tin cá nhân -->
+                    <div class="row g-4 mb-4">
+                        <div class="col-md-4">
+                            <label for="author" class="form-label fw-bold text-secondary">Tên *</label>
+                            <input type="text" class="form-control bg-light" id="author" name="author" required>
+                        </div>
+                        <div class="col-md-4">
+                            <label for="email" class="form-label fw-bold text-secondary">Email *</label>
+                            <input type="email" class="form-control bg-light" id="email" name="email" required>
+                        </div>
+                        <div class="col-md-4">
+                            <label for="url" class="form-label fw-bold text-secondary">Trang web</label>
+                            <input type="url" class="form-control bg-light" id="url" name="url">
+                        </div>
+                    </div>
+
+                    <!-- Checkbox lưu thông tin -->
+                    <div class="mb-4 form-check">
+                        <input type="checkbox" class="form-check-input" id="save-info">
+                        <label class="form-check-label text-secondary small" for="save-info">
+                            Lưu tên của tôi, email, và trang web trong trình duyệt này cho lần bình luận kế tiếp của
+                            tôi.
+                        </label>
+                    </div>
+
+                    <!-- Nút gửi -->
+                    <div class="mt-3">
+                        <button type="submit" class="btn btn-dark-blue px-4 py-2 text-uppercase fw-bold">
+                            Gửi bình luận
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- end form bình luận -->
+
+    <footer class="text-white py-5" style="background-color: #3e502c;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 mb-4">
+                    <img src="https://sns.edu.vn/wp-content/uploads/2026/03/LOGO-SNS-2025_green-dark-scaled-e1773720100248-768x357.png"
+                        height="100" class="ms-2">
+                </div>
+                <div class="col-lg-3 mb-4">
+                    <h5 class="fw-bold mb-3">TUYỂN SINH</h5>
+                    <hr border-bottom pb-2 style="width: 100px;">
+                    <ul class="list-unstyled small lh-lg">
+                        <li>Tại sao chọn SNS</li>
+                        <li>Quy trình đăng ký</li>
+                        <li>Học phí</li>
+                        <li>Tuyển dụng</li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <h5 class="fw-bold mb-3">HỆ ĐÀO TẠO</h5>
+                    <hr border-bottom pb-2 style="width: 100px;">
+                    <ul class="list-unstyled small lh-lg">
+                        <li>Hệ Mầm non</li>
+                        <li>Hệ Chuẩn Quốc tế</li>
+                        <li>Hệ Song ngữ Tích hợp</li>
+                        <li>Hệ Phổ thông tiếng Anh Mỹ nâng cao</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="text-center pt-4 border-top opacity-50 small">
+                Copyright 2026 © St. Nicholas
+            </div>
+        </div>
+    </footer>
+
+    <div class="social-contact-circles">
+        <a href="tel:0123456789" class="contact-item phone" title="Gọi điện">
+            <i class="fa-solid fa-phone"></i>
+        </a>
+        <a href="https://zalo.me/yourid" class="contact-item zalo" title="Chat Zalo">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Icon_of_Zalo.svg" alt="Zalo">
+        </a>
+        <button id="backToTop" class="contact-item scroll-top">
+            <i class="fa-solid fa-chevron-up"></i>
+        </button>
+    </div>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+
+</html>
