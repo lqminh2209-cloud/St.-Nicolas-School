@@ -59,3 +59,10 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 });
+// Zoom ảnh trong quy trình đăng ký
+function zoomImage(element) {
+    // Lấy đường dẫn src của ảnh vừa click
+    const imgSrc = element.querySelector('img').getAttribute('src');
+    // Gán vào thẻ img bên trong Modal
+    document.getElementById('zoomedImg').setAttribute('src', imgSrc);
+}

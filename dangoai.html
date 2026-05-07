@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The St. Nicholas School - Giao diện mẫu</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Search Overlay -->
+    <div id="search-overlay" class="sns-search-overlay">
+        <div class="close-search-wrapper" id="close-search">
+            <i class="fa-solid fa-xmark"></i>
+        </div>
+
+        <div class="search-content-wrapper">
+            <form action="/search" method="get" class="search-form-flex">
+                <div class="input-with-icon">
+                    <i class="fa-solid fa-magnifying-glass search-icon-inside"></i>
+                    <input type="text" name="q" placeholder="Nhập từ khóa tìm kiếm tại St. Nicholas..." autofocus
+                        id="search-input">
+                </div>
+            </form>
+            <p class="search-tip text-white-50 small mt-3">Nhấn 'Enter' để tìm kiếm hoặc 'Esc' để đóng.</p>
+        </div>
+    </div>
+    <!-- end Search Overlay -->
+    <nav class="navbar navbar-expand-xl navbar-light bg-white sticky-top py-3 border-bottom">
+        <div class="container-fluid px-4">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="https://sns.edu.vn/wp-content/uploads/2026/03/LOGO-SNS-2025-e1773720149194-1400x622.png"
+                    alt="SNS Logo" height="70">
+            </a>
+
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar">
+                <div class="offcanvas-header border-bottom d-xl-none">
+                    <h5 class="offcanvas-title fw-bold text-success">MENU SNS</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+                </div>
+
+                <div class="offcanvas-body">
+                    <div class="d-xl-none mb-4">
+                        <div class="input-group border rounded-pill overflow-hidden">
+                            <input type="text" class="form-control border-0 px-3" placeholder="Tìm kiếm...">
+                            <button class="btn btn-light border-0"><i class="fa-solid fa-magnifying-glass"></i></button>
+                        </div>
+                    </div>
+
+                    <ul class="navbar-nav mx-auto text-uppercase fw-bold small">
+                        <li class="nav-item dropdown border-bottom-mobile">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Giới thiệu</a>
+                            <ul class="dropdown-menu border-0 shadow-sm">
+                                <li><a class="dropdown-item" href="gioithieu.html">St.Nicholas – Trường chuẩn quốc tế Mỹ
+                                        tại Đà
+                                        Nẵng</a></li>
+                                <li><a class="dropdown-item" href="gioithieu.html">Tầm nhìn & Sứ mệnh</a></li>
+                                <li><a class="dropdown-item" href="equest.html">Giới Thiệu Tập Đoàn Giáo Dục EQuest</a>
+                                </li>
+                                <li><a class="dropdown-item" href="bangiamhieu.html">Ban Giám hiệu</a></li>
+                                <li><a class="dropdown-item" href="kiemdinh_doitac.html">Cơ quan kiểm định chất lượng và
+                                        đối tác</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item dropdown border-bottom-mobile">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Hệ đào tạo</a>
+                            <ul class="dropdown-menu border-0 shadow-sm">
+                                <li><a class="dropdown-item" href="he_mam_non.html">Hệ Mầm non</a></li>
+                                <li><a class="dropdown-item" href="he_quoc_te.html">Hệ Chuẩn Quốc tế</a></li>
+                                <li><a class="dropdown-item" href="he_song_ngu_tich_hop.html">Hệ Song ngữ Tích hợp</a></li>
+                                <li><a class="dropdown-item" href="he_pt_my_nang_cao.html">Hệ Phổ thông tiếng Anh Mỹ nâng cao</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item border-bottom-mobile"><a class="nav-link" href="College_Board.html">College
+                                Board</a></li>
+                        <li class="nav-item border-bottom-mobile"><a class="nav-link" href="tuvan_duhoc.html">Tư vấn du
+                                học</a></li>
+                        <li class="nav-item dropdown border-bottom-mobile">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Tuyển sinh</a>
+                            <ul class="dropdown-menu border-0 shadow-sm">
+                                <li><a class="dropdown-item" href="sns.html">Tại sao chọn SNS</a></li>
+                                <li><a class="dropdown-item" href="quytrinh_dangky.html">Quy trình đăng ký</a></li>
+                                <li><a class="dropdown-item" href="hocphi.html">Học phí</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item dropdown border-bottom-mobile">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">C.E.P</a>
+                            <ul class="dropdown-menu border-0 shadow-sm">
+                                <li><a class="dropdown-item" href="dangoai.html">Dã ngoại</a></li>
+                                <li><a class="dropdown-item" href="caulacbo.html">Câu lạc bộ</a></li>
+                                <li><a class="dropdown-item" href="thethao.html">Thể thao</a></li>
+                                <li><a class="dropdown-item" href="hoidong_hocsinh.html">Hội đồng học sinh</a></li>
+                                <li><a class="dropdown-item" href="hoatdong_congdong.html">Hoạt động cộng đồng</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item dropdown border-bottom-mobile">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Học đường</a>
+                            <ul class="dropdown-menu border-0 shadow-sm">
+                                <li><a class="dropdown-item" href="lich_hoc_nam.html">Lịch năm học</a></li>
+                                <li><a class="dropdown-item" href="co_so_vat_chat.html">Cơ sở vật chất</a></li>
+                                <li><a class="dropdown-item" href="tu_van.html">Tư vấn</a></li>
+                                <li><a class="dropdown-item" href="dinh_duong.html">Dinh dưỡng</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item border-bottom-mobile"><a class="nav-link" href="tintuc.html">Tin tức</a>
+                        </li>
+                        <li class="nav-item border-bottom-mobile"><a class="nav-link" href="lienhe.html">Liên hệ</a>
+                        </li>
+                    </ul>
+
+                    <div class="d-flex flex-column flex-xl-row align-items-start align-items-xl-center mt-3 mt-xl-0">
+                        <div class="dropdown language-switcher me-xl-3 w-100 w-xl-auto">
+                            <a class="text-decoration-none text-dark fw-bold small dropdown-toggle d-flex justify-content-between align-items-center p-2 p-xl-0"
+                                href="#" id="langDropdown" data-bs-toggle="dropdown">
+                                <span>VN <img src="https://sns.edu.vn/wp-content/plugins/polylang/flags/vn.png"
+                                        width="18" class="ms-1"></span>
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-end shadow-sm">
+                                <li>
+                                    <a class="dropdown-item d-flex align-items-center justify-content-between" href="#">
+                                        TIẾNG VIỆT <img
+                                            src="https://sns.edu.vn/wp-content/plugins/polylang/flags/vn.png"
+                                            width="18">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item d-flex align-items-center justify-content-between" href="#">
+                                        ENGLISH <img src="https://sns.edu.vn/wp-content/plugins/polylang/flags/us.png"
+                                            width="18">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item d-flex align-items-center justify-content-between" href="#">
+                                        한국어 <img src="https://sns.edu.vn/wp-content/plugins/polylang/flags/kr.png"
+                                            width="18">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <i class="fa-solid fa-magnifying-glass fs-5 cursor-pointer d-none d-xl-block"></i>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!--  -->
+    <section class="cep-section py-5">
+        <div class="container">
+            <!-- Phần hình ảnh với tiêu đề đè lên -->
+            <div class="position-relative mb-4 rounded-3 overflow-hidden shadow">
+                <img src="https://sns.edu.vn/wp-content/uploads/2026/04/482033147_1101093498701128_5935917009743171380_n-1200x800.jpg"
+                    class="img-fluid w-100" alt="Chương trình ngoại khóa C.E.P">
+
+                <!-- Overlay tiêu đề -->
+                <div class="position-absolute top-50 start-50 translate-middle text-center w-100 px-3">
+                    <h2 class="text-white fw-bold text-uppercase display-5 cep-title">
+                        Chương trình ngoại khóa<br>Phát triển toàn diện (C.E.P)
+                    </h2>
+                </div>
+            </div>
+
+            <!-- Phần văn bản mô tả -->
+            <div class="cep-description text-secondary lh-lg">
+                <p class="mb-4">
+                    C.E.P (Co-Curriculum Enrichment Program) tại St. Nicholas School là chương trình ngoại khóa dành cho
+                    học sinh Lớp 1–12, hướng đến phát triển toàn diện về học thuật, kỹ năng và tư duy hội nhập quốc tế.
+                </p>
+                <p class="mb-4">
+                    Bên cạnh các câu lạc bộ đa dạng và chương trình học thuật quốc tế, C.E.P còn được thiết kế với hệ
+                    sinh thái hoạt động phong phú gồm:
+                    <strong class="text-dark">các sự kiện thường niên hằng tháng, hoạt động thiện nguyện và các chuyến
+                        fieldtrip thực tế</strong>.
+                    Đây là cơ hội để học sinh học qua trải nghiệm, rèn luyện kỹ năng sống, phát triển tư duy xã hội và
+                    nuôi dưỡng tinh thần trách nhiệm cộng đồng.
+                </p>
+                <p>
+                    C.E.P không chỉ là chương trình ngoại khóa, mà là hành trình giúp học sinh khám phá bản thân, phát
+                    triển toàn diện và sẵn sàng hội nhập thế giới.
+                </p>
+            </div>
+        </div>
+    </section>
+    <!--  -->
+    <!-- slide da ngoai -->
+    <section class="field-trip-section py-5 bg-white">
+        <div class="container">
+            <!-- Tiêu đề và mô tả -->
+            <h2 class="text-center fw-bold text-secondary mb-4 text-uppercase">Dã ngoại</h2>
+            <p class=" text-secondary mb-5 mx-auto lh-lg" style="max-width: 1000px;">
+                Các hoạt động dã ngoại trong chương trình C.E.P được thiết kế như một phần của hành trình học tập trải
+                nghiệm, giúp học sinh rời khỏi lớp học để khám phá thế giới thực tế, quan sát, tương tác và học hỏi trực
+                tiếp từ môi trường xung quanh.
+            </p>
+
+            <!-- SLIDE HÀNG TRÊN -->
+            <div class="carousel-container position-relative mb-5">
+                <div id="carouselFieldTripTop" class="carousel slide" data-bs-ride="false">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="row g-2">
+                                <div class="col-3"><img
+                                        src="https://sns.edu.vn/wp-content/uploads/2026/04/Jannie-168-2048x1365.jpg"
+                                        class="img-fluid rounded" alt=""></div>
+                                <div class="col-3"><img
+                                        src="https://sns.edu.vn/wp-content/uploads/2026/04/Jannie-177-2048x1365.jpg"
+                                        class="img-fluid rounded" alt=""></div>
+                                <div class="col-3"><img
+                                        src="https://sns.edu.vn/wp-content/uploads/2026/04/Jannie-191-2048x1365.jpg"
+                                        class="img-fluid rounded" alt=""></div>
+                                <div class="col-3"><img
+                                        src="https://sns.edu.vn/wp-content/uploads/2026/04/Jannie-197-2048x1365.jpg"
+                                        class="img-fluid rounded" alt=""></div>
+                                <div class="col-3"><img
+                                        src="https://sns.edu.vn/wp-content/uploads/2026/04/Jannie-197-2048x1365.jpg"
+                                        class="img-fluid rounded" alt=""></div>
+                                <div class="col-3"><img
+                                        src="https://sns.edu.vn/wp-content/uploads/2026/04/Jannie-176-1200x800.jpg"
+                                        class="img-fluid rounded" alt=""></div>
+                                <div class="col-3"><img
+                                        src="https://sns.edu.vn/wp-content/uploads/2026/04/Jannie-125-768x512.jpg"
+                                        class="img-fluid rounded" alt=""></div>
+                                <div class="col-3"><img
+                                        src="https://sns.edu.vn/wp-content/uploads/2026/04/Jannie-188-768x512.jpg"
+                                        class="img-fluid rounded" alt=""></div>
+                                <div class="col-3"><img
+                                        src="https://sns.edu.vn/wp-content/uploads/2026/04/Jannie-204-1200x800.jpg"
+                                        class="img-fluid rounded" alt=""></div>
+                                <div class="col-3"><img
+                                        src="https://sns.edu.vn/wp-content/uploads/2026/04/Jannie-384-2048x1365.jpg"
+                                        class="img-fluid rounded" alt=""></div>
+                                <div class="col-3"><img
+                                        src="https://sns.edu.vn/wp-content/uploads/2026/04/Jannie-572-2048x1365.jpg"
+                                        class="img-fluid rounded" alt=""></div>
+                                <div class="col-3"><img
+                                        src="https://sns.edu.vn/wp-content/uploads/2026/04/Jannie-84-2048x1365.jpg"
+                                        class="img-fluid rounded" alt=""></div>
+
+
+
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row g-2">
+                                <div class="col-3"><img
+                                        src="https://sns.edu.vn/wp-content/uploads/2021/03/73349285_480579035883733_2860155173517393920_o.jpg"
+                                        class="img-fluid rounded" alt=""></div>
+                                <div class="col-3"><img
+                                        src="https://sns.edu.vn/wp-content/uploads/2021/03/0-02-06-ac2ae1b4df4f3d62ad33e2aa65ee9eb45e35f575ff161d86248e3a8c67b502c6_caadb187.jpg.webp"
+                                        class="img-fluid rounded" alt=""></div>
+                                <div class="col-3"><img
+                                        src="https://sns.edu.vn/wp-content/uploads/2021/03/0-02-06-3065ab4b2d0aa19df4548fa847db9ee65507d3b264bdc23aef18c3769afb5e62_30d143cc.jpg"
+                                        class="img-fluid rounded" alt=""></div>
+                                <div class="col-3"><img
+                                        src="https://sns.edu.vn/wp-content/uploads/2021/03/0-02-06-74f2ea1467ffc7ad0ff15953e4600fb52a745e0d454d050da3081b51f99a14a4_6789d0f0.jpg.webp"
+                                        class="img-fluid rounded" alt=""></div>
+                                <div class="col-3"><img
+                                        src="https://sns.edu.vn/wp-content/uploads/2021/03/0-02-06-4cfc89f846cdd22cf6fc18ec70f70806c7d64c990236050a94fe9993872c400b_d40d1b78.jpg.webp"
+                                        class="img-fluid rounded" alt=""></div>
+                                <div class="col-3"><img
+                                        src="https://sns.edu.vn/wp-content/uploads/2026/04/Jannie-78-2048x1365.jpg"
+                                        class="img-fluid rounded" alt=""></div>
+                                <div class="col-3"><img
+                                        src="https://sns.edu.vn/wp-content/uploads/2021/03/0-02-06-0bb063b60675fa6d3a430fd594df52b129bf7ec7800c265ca069fa7365bd8aba_9b6ac7eb.jpg.webp"
+                                        class="img-fluid rounded" alt=""></div>
+                                <div class="col-3"><img
+                                        src="https://sns.edu.vn/wp-content/uploads/2021/03/z2357148579223_313e38ff4b81de32ff9659675b6025e0.jpg"
+                                        class="img-fluid rounded" alt=""></div>
+                                <div class="col-3"><img
+                                        src="https://sns.edu.vn/wp-content/uploads/2021/03/0-02-06-4d6f994294e28f67fdff8817df554794a78e975549b493b3876e925a835c845d_d818fb41.jpg"
+                                        class="img-fluid rounded" alt=""></div>
+                                <div class="col-3"><img
+                                        src="https://sns.edu.vn/wp-content/uploads/2021/03/0-02-06-0aa4ef823b6b618341d29e17b5290b3afeeccdbdde44e6af0a7801332ec18dd9_e22841b8.jpg"
+                                        class="img-fluid rounded" alt=""></div>
+                                <div class="col-3"><img
+                                        src="https://sns.edu.vn/wp-content/uploads/2021/03/z2357149022785_3b45d4df86a82b17d58362ab11b7f882.jpg.webp"
+                                        class="img-fluid rounded" alt=""></div>
+                                <div class="col-3"><img
+                                        src="https://sns.edu.vn/wp-content/uploads/2021/03/0-02-06-ac2ae1b4df4f3d62ad33e2aa65ee9eb45e35f575ff161d86248e3a8c67b502c6_caadb187.jpg.webp"
+                                        class="img-fluid rounded" alt=""></div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Nút điều hướng hàng trên -->
+                    <button class="carousel-control-prev custom-nav" type="button"
+                        data-bs-target="#carouselFieldTripTop" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+                    <button class="carousel-control-next custom-nav" type="button"
+                        data-bs-target="#carouselFieldTripTop" data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
+                </div>
+            </div>
+            <!-- Tiêu đề và mô tả -->
+            <h2 class="text-center fw-bold text-secondary mb-4 text-uppercase">HOẠT ĐỘNG THIỆN NGUYỆN “GÓP NẮNG CHO EM”
+            </h2>
+            <p class=" text-secondary mb-5 mx-auto lh-lg" style="max-width: 1000px;">
+                Trong năm học 2025 – 2026, hành trình thiện nguyện “Góp Nắng Cho Em” của C.E.P đã tiếp tục lan tỏa yêu
+                thương đến nhiều điểm trường và cơ sở y tế, mang theo những món quà nhỏ nhưng chứa đựng tinh thần sẻ
+                chia lớn.
+
+                Hành trình đã đi qua Bệnh viện Sản Nhi Đà Nẵng, Bệnh viện Ung bướu Đà Nẵng, Trường Tiểu học Trương Đình
+                Nam (xã Thượng Đức, TP. Đà Nẵng) và Trường Phổ thông Dân tộc Bán trú Tiểu học & THCS Ch’Ơm (xã Hùng Sơn,
+                TP. Đà Nẵng), mang theo những “tia nắng” ấm áp đến với các em nhỏ và những hoàn cảnh còn nhiều khó khăn.
+
+                Không chỉ là những phần quà, “Góp Nắng Cho Em” còn là hành trình lan tỏa sự đồng cảm, nuôi dưỡng tinh
+                thần nhân ái và giúp học sinh học cách yêu thương, sẻ chia với cộng đồng bằng những hành động thiết
+                thực.
+            </p>
+            <!-- SLIDE HÀNG DƯỚI -->
+            <div class="carousel-container position-relative">
+                <div id="carouselFieldTripBottom" class="carousel slide" data-bs-ride="false">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="row g-2">
+                                <div class="col-3"><img
+                                        src="https://sns.edu.vn/wp-content/uploads/2026/04/582469097_1314751640668645_3729121130515364392_n.jpg"
+                                        class="img-fluid rounded" alt=""></div>
+                                <div class="col-3"><img
+                                        src="https://sns.edu.vn/wp-content/uploads/2026/04/582274570_1314751664001976_6315820094125107461_n.jpg"
+                                        class="img-fluid rounded" alt=""></div>
+                                <div class="col-3"><img
+                                        src="https://sns.edu.vn/wp-content/uploads/2026/04/583792761_1314751764001966_2530265421924724752_n.jpg"
+                                        class="img-fluid rounded" alt=""></div>
+                                <div class="col-3"><img
+                                        src="https://sns.edu.vn/wp-content/uploads/2026/04/583914964_1314751850668624_5225055436740088567_n.jpg"
+                                        class="img-fluid rounded" alt=""></div>
+
+                            </div>
+                        </div>
+                        <!-- Slide tiếp theo -->
+                        <div class="carousel-item active">
+                            <div class="row g-2">
+                                <div class="col-3"><img
+                                        src="https://sns.edu.vn/wp-content/uploads/2026/04/649366924_1410523344424807_8424481349650945274_n-1200x800.jpg"
+                                        class="img-fluid rounded" alt=""></div>
+                                <div class="col-3"><img
+                                        src="https://sns.edu.vn/wp-content/uploads/2026/04/596613409_1335050205305455_7098637707629110063_n.jpg"
+                                        class="img-fluid rounded" alt=""></div>
+                                <div class="col-3"><img
+                                        src="https://sns.edu.vn/wp-content/uploads/2026/04/582438784_1314751650668644_3511871578554613540_n.jpg"
+                                        class="img-fluid rounded" alt=""></div>
+                                <div class="col-3"><img
+                                        src="https://sns.edu.vn/wp-content/uploads/2026/04/583908523_1314751717335304_5990581166089127534_n.jpg"
+                                        class="img-fluid rounded" alt=""></div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Nút điều hướng hàng dưới -->
+                    <button class="carousel-control-prev custom-nav" type="button"
+                        data-bs-target="#carouselFieldTripBottom" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+                    <button class="carousel-control-next custom-nav" type="button"
+                        data-bs-target="#carouselFieldTripBottom" data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+    <!--  -->
+    <section class="charity-section py-5 bg-white">
+        <div class="container">
+            <!-- Tiêu đề và mô tả -->
+            <h2 class="text-center fw-bold text-secondary mb-4 text-uppercase">
+                GIẢI THỂ THAO THƯỜNG NIÊN (CHẠY, BƠI LỘI,…)
+            </h2>
+            <p class="text-secondary mb-5 mx-auto lh-lg " style="max-width: 1000px;">
+                Giải chạy thường niên là một trong những hoạt động thể thao nổi bật của chương trình C.E.P tại St.
+                Nicholas School, bao gồm các sự kiện như IRONKIDS, Newborn Run và các giải chạy phong trào dành cho học
+                sinh.
+                <br><br>
+                Đây là hoạt động giúp học sinh rèn luyện thể chất, phát triển sức bền, tinh thần kỷ luật và ý chí vượt
+                qua thử thách. Thông qua mỗi đường chạy, các em được trải nghiệm tinh thần thể thao tích cực, học cách
+                nỗ lực bền bỉ và chinh phục mục tiêu của chính mình trong môi trường an toàn và giàu cảm hứng.
+            </p>
+
+            <!-- SLIDE HÀNG DƯỚI -->
+            <div class="carousel-container position-relative px-md-5">
+                <div id="carouselCharity" class="carousel slide" data-bs-ride="false">
+                    <div class="carousel-inner">
+                        <!-- Slide 1 (Duy nhất thẻ này có class 'active') -->
+                        <div class="carousel-item active">
+                            <div class="row g-2">
+                                <div class="col-3"><img
+                                        src="https://sns.edu.vn/wp-content/uploads/2026/04/649547138_1410488854428256_6916816881238988700_n-1.jpg"
+                                        class="img-fluid rounded shadow-sm charity-img" alt=""></div>
+                                <div class="col-3"><img
+                                        src="https://sns.edu.vn/wp-content/uploads/2026/04/488254265_1123500243127120_266544036093958544_n-1.jpg"
+                                        class="img-fluid rounded shadow-sm charity-img" alt=""></div>
+                                <div class="col-3"><img
+                                        src="https://sns.edu.vn/wp-content/uploads/2026/04/495239784_1148759483934529_6074664409847043418_n-1.jpg"
+                                        class="img-fluid rounded shadow-sm charity-img" alt=""></div>
+                                <div class="col-3"><img
+                                        src="https://sns.edu.vn/wp-content/uploads/2026/04/495571761_1152189743591503_6531217878040898082_n-1.jpg"
+                                        class="img-fluid rounded shadow-sm charity-img" alt=""></div>
+                            </div>
+                        </div>
+
+                        <!-- Slide 2 -->
+                        <div class="carousel-item">
+                            <div class="row g-2">
+                                <div class="col-3"><img
+                                        src="https://sns.edu.vn/wp-content/uploads/2026/04/495789700_1152189303591547_5008928186193517381_n-1.jpg"
+                                        class="img-fluid rounded shadow-sm charity-img" alt=""></div>
+                                <div class="col-3"><img
+                                        src="https://sns.edu.vn/wp-content/uploads/2026/04/309faf897237c0699926-1.jpg"
+                                        class="img-fluid rounded shadow-sm charity-img" alt=""></div>
+                                <div class="col-3"><img
+                                        src="https://sns.edu.vn/wp-content/uploads/2026/04/DSCF8891-1-2048x1365.jpg"
+                                        class="img-fluid rounded shadow-sm charity-img" alt=""></div>
+                                <div class="col-3"><img
+                                        src="https://sns.edu.vn/wp-content/uploads/2026/04/DSCF8893-1-2048x1365.jpg"
+                                        class="img-fluid rounded shadow-sm charity-img" alt=""></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Nút điều hướng -->
+                    <button class="carousel-control-prev custom-nav-dark" type="button"
+                        data-bs-target="#carouselCharity" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+                    <button class="carousel-control-next custom-nav-dark" type="button"
+                        data-bs-target="#carouselCharity" data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--  -->
+
+    <footer class="text-white py-5" style="background-color: #3e502c;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 mb-4">
+                    <img src="https://sns.edu.vn/wp-content/uploads/2026/03/LOGO-SNS-2025_green-dark-scaled-e1773720100248-768x357.png"
+                        height="100" class="ms-2">
+                </div>
+                <div class="col-lg-3 mb-4">
+                    <h5 class="fw-bold mb-3">TUYỂN SINH</h5>
+                    <hr border-bottom pb-2 style="width: 100px;">
+                    <ul class="list-unstyled small lh-lg">
+                        <li>Tại sao chọn SNS</li>
+                        <li>Quy trình đăng ký</li>
+                        <li>Học phí</li>
+                        <li>Tuyển dụng</li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <h5 class="fw-bold mb-3">HỆ ĐÀO TẠO</h5>
+                    <hr border-bottom pb-2 style="width: 100px;">
+                    <ul class="list-unstyled small lh-lg">
+                        <li>Hệ Mầm non</li>
+                        <li>Hệ Chuẩn Quốc tế</li>
+                        <li>Hệ Song ngữ Tích hợp</li>
+                        <li>Hệ Phổ thông tiếng Anh Mỹ nâng cao</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="text-center pt-4 border-top opacity-50 small">
+                Copyright 2026 © St. Nicholas
+            </div>
+        </div>
+    </footer>
+
+    <div class="social-contact-circles">
+        <a href="tel:0123456789" class="contact-item phone" title="Gọi điện">
+            <i class="fa-solid fa-phone"></i>
+        </a>
+        <a href="https://zalo.me/yourid" class="contact-item zalo" title="Chat Zalo">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Icon_of_Zalo.svg" alt="Zalo">
+        </a>
+        <button id="backToTop" class="contact-item scroll-top">
+            <i class="fa-solid fa-chevron-up"></i>
+        </button>
+    </div>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+
+</html>

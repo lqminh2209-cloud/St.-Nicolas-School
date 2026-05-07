@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The St. Nicholas School - Giao diện mẫu</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Search Overlay -->
+    <div id="search-overlay" class="sns-search-overlay">
+        <div class="close-search-wrapper" id="close-search">
+            <i class="fa-solid fa-xmark"></i>
+        </div>
+
+        <div class="search-content-wrapper">
+            <form action="/search" method="get" class="search-form-flex">
+                <div class="input-with-icon">
+                    <i class="fa-solid fa-magnifying-glass search-icon-inside"></i>
+                    <input type="text" name="q" placeholder="Nhập từ khóa tìm kiếm tại St. Nicholas..." autofocus
+                        id="search-input">
+                </div>
+            </form>
+            <p class="search-tip text-white-50 small mt-3">Nhấn 'Enter' để tìm kiếm hoặc 'Esc' để đóng.</p>
+        </div>
+    </div>
+    <!-- end Search Overlay -->
+    <nav class="navbar navbar-expand-xl navbar-light bg-white sticky-top py-3 border-bottom">
+        <div class="container-fluid px-4">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="https://sns.edu.vn/wp-content/uploads/2026/03/LOGO-SNS-2025-e1773720149194-1400x622.png"
+                    alt="SNS Logo" height="70">
+            </a>
+
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar">
+                <div class="offcanvas-header border-bottom d-xl-none">
+                    <h5 class="offcanvas-title fw-bold text-success">MENU SNS</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+                </div>
+
+                <div class="offcanvas-body">
+                    <div class="d-xl-none mb-4">
+                        <div class="input-group border rounded-pill overflow-hidden">
+                            <input type="text" class="form-control border-0 px-3" placeholder="Tìm kiếm...">
+                            <button class="btn btn-light border-0"><i class="fa-solid fa-magnifying-glass"></i></button>
+                        </div>
+                    </div>
+
+                    <ul class="navbar-nav mx-auto text-uppercase fw-bold small">
+                        <li class="nav-item dropdown border-bottom-mobile">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Giới thiệu</a>
+                            <ul class="dropdown-menu border-0 shadow-sm">
+                                <li><a class="dropdown-item" href="gioithieu.html">St.Nicholas – Trường chuẩn quốc tế Mỹ
+                                        tại Đà
+                                        Nẵng</a></li>
+                                <li><a class="dropdown-item" href="gioithieu.html">Tầm nhìn & Sứ mệnh</a></li>
+                                <li><a class="dropdown-item" href="equest.html">Giới Thiệu Tập Đoàn Giáo Dục EQuest</a>
+                                </li>
+                                <li><a class="dropdown-item" href="bangiamhieu.html">Ban Giám hiệu</a></li>
+                                <li><a class="dropdown-item" href="kiemdinh_doitac.html">Cơ quan kiểm định chất lượng và
+                                        đối tác</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item dropdown border-bottom-mobile">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Hệ đào tạo</a>
+                            <ul class="dropdown-menu border-0 shadow-sm">
+                                <li><a class="dropdown-item" href="he_mam_non.html">Hệ Mầm non</a></li>
+                                <li><a class="dropdown-item" href="he_quoc_te.html">Hệ Chuẩn Quốc tế</a></li>
+                                <li><a class="dropdown-item" href="he_song_ngu_tich_hop.html">Hệ Song ngữ Tích hợp</a>
+                                </li>
+                                <li><a class="dropdown-item" href="he_pt_my_nang_cao.html">Hệ Phổ thông tiếng Anh Mỹ
+                                        nâng cao</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item border-bottom-mobile"><a class="nav-link" href="College_Board.html">College
+                                Board</a></li>
+                        <li class="nav-item border-bottom-mobile"><a class="nav-link" href="tuvan_duhoc.html">Tư vấn du
+                                học</a></li>
+                        <li class="nav-item dropdown border-bottom-mobile">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Tuyển sinh</a>
+                            <ul class="dropdown-menu border-0 shadow-sm">
+                                <li><a class="dropdown-item" href="sns.html">Tại sao chọn SNS</a></li>
+                                <li><a class="dropdown-item" href="quytrinh_dangky.html">Quy trình đăng ký</a></li>
+                                <li><a class="dropdown-item" href="hocphi.html">Học phí</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item dropdown border-bottom-mobile">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">C.E.P</a>
+                            <ul class="dropdown-menu border-0 shadow-sm">
+                                <li><a class="dropdown-item" href="dangoai.html">Dã ngoại</a></li>
+                                <li><a class="dropdown-item" href="caulacbo.html">Câu lạc bộ</a></li>
+                                <li><a class="dropdown-item" href="thethao.html">Thể thao</a></li>
+                                <li><a class="dropdown-item" href="hoidong_hocsinh.html">Hội đồng học sinh</a></li>
+                                <li><a class="dropdown-item" href="hoatdong_congdong.html">Hoạt động cộng đồng</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item dropdown border-bottom-mobile">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Học đường</a>
+                            <ul class="dropdown-menu border-0 shadow-sm">
+                                <li><a class="dropdown-item" href="lich_hoc_nam.html">Lịch năm học</a></li>
+                                <li><a class="dropdown-item" href="co_so_vat_chat.html">Cơ sở vật chất</a></li>
+                                <li><a class="dropdown-item" href="tu_van.html">Tư vấn</a></li>
+                                <li><a class="dropdown-item" href="dinh_duong.html">Dinh dưỡng</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item border-bottom-mobile"><a class="nav-link" href="tintuc.html">Tin tức</a>
+                        </li>
+                        <li class="nav-item border-bottom-mobile"><a class="nav-link" href="lienhe.html">Liên hệ</a>
+                        </li>
+                    </ul>
+
+                    <div class="d-flex flex-column flex-xl-row align-items-start align-items-xl-center mt-3 mt-xl-0">
+                        <div class="dropdown language-switcher me-xl-3 w-100 w-xl-auto">
+                            <a class="text-decoration-none text-dark fw-bold small dropdown-toggle d-flex justify-content-between align-items-center p-2 p-xl-0"
+                                href="#" id="langDropdown" data-bs-toggle="dropdown">
+                                <span>VN <img src="https://sns.edu.vn/wp-content/plugins/polylang/flags/vn.png"
+                                        width="18" class="ms-1"></span>
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-end shadow-sm">
+                                <li>
+                                    <a class="dropdown-item d-flex align-items-center justify-content-between" href="#">
+                                        TIẾNG VIỆT <img
+                                            src="https://sns.edu.vn/wp-content/plugins/polylang/flags/vn.png"
+                                            width="18">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item d-flex align-items-center justify-content-between" href="#">
+                                        ENGLISH <img src="https://sns.edu.vn/wp-content/plugins/polylang/flags/us.png"
+                                            width="18">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item d-flex align-items-center justify-content-between" href="#">
+                                        한국어 <img src="https://sns.edu.vn/wp-content/plugins/polylang/flags/kr.png"
+                                            width="18">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <i class="fa-solid fa-magnifying-glass fs-5 cursor-pointer d-none d-xl-block"></i>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!--  -->
+    <section class="facility-section py-5 bg-white">
+        <div class="container">
+            <h2 class="text-center fw-bold text-success-dark mb-5 text-uppercase">
+                Cơ sở vật chất
+            </h2>
+
+            <div class="facility-intro mb-4">
+                <h5 class="fw-bold text-dark text-uppercase mb-3">
+                    RA MẮT DIỆN MẠO MỚI – KHÔNG GIAN HỌC TẬP CHUẨN QUỐC TẾ CỦA ST. NICHOLAS SCHOOL
+                </h5>
+                <div class="facility-description text-secondary lh-lg">
+                    <p class="fst-italic mb-3">
+                        Tọa lạc tại khu đô thị Hòa Xuân, Đà Nẵng, cơ sở mới của St. Nicholas School chính là dấu ấn quan
+                        trọng trong hành trình kiến tạo môi trường giáo dục chuẩn quốc tế.
+                    </p>
+                    <p class="mb-4">
+                        Không chỉ đơn thuần là một công trình kiến trúc hiện đại, cơ sở mới được thiết kế như một không
+                        gian học tập tràn đầy cảm hứng – nơi mang đến sự cân bằng giữa chuẩn mực học thuật và trải
+                        nghiệm đa chiều. Từng chi tiết, từ khuôn viên xanh mát, hành lang mở, đến các phòng học hiện
+                        đại, đều được chăm chút để học sinh được học tập, sáng tạo và trưởng thành trong môi trường tốt
+                        nhất.
+                    </p>
+                </div>
+            </div>
+
+            <div class="facility-main-image shadow-sm rounded-3 overflow-hidden">
+                <img src="https://sns.edu.vn/wp-content/uploads/2025/10/DSCF5097-2048x1365.jpg"
+                    alt="Cơ sở vật chất St. Nicholas School" class="img-fluid w-100">
+            </div>
+        </div>
+    </section>
+    <!--  -->
+    <section class="facility-details py-5">
+        <div class="container">
+            <div class="row g-4 mb-5">
+                <div class="col-md-6">
+                    <img src="https://sns.edu.vn/wp-content/uploads/2025/10/DSCF5022-1536x1043.jpg"
+                        class="img-fluid rounded shadow-sm w-100" alt="Không gian học tập 1">
+                </div>
+                <div class="col-md-6">
+                    <img src="https://sns.edu.vn/wp-content/uploads/2025/10/DSCF5017-1536x1024.jpg"
+                        class="img-fluid rounded shadow-sm w-100" alt="Không gian học tập 2">
+                </div>
+            </div>
+
+            <div class="mb-5">
+                <h5 class="fw-bold text-success-dark mb-3 text-uppercase">Phòng âm nhạc</h5>
+                <div class="row g-4">
+                    <div class="col-md-6">
+                        <img src="https://sns.edu.vn/wp-content/uploads/2025/10/DSCF5092-2048x1365.jpg"
+                            class="img-fluid rounded shadow-sm w-100" alt="Phòng âm nhạc view 1">
+                    </div>
+                    <div class="col-md-6">
+                        <img src="https://sns.edu.vn/wp-content/uploads/2025/10/DSCF5092-2048x1365.jpg"
+                            class="img-fluid rounded shadow-sm w-100" alt="Phòng âm nhạc view 2">
+                    </div>
+                </div>
+            </div>
+
+            <div class="mb-5">
+                <h5 class="fw-bold text-success-dark mb-3 text-uppercase">Hồ bơi</h5>
+                <div class="row g-4">
+                    <div class="col-md-6">
+                        <img src="https://sns.edu.vn/wp-content/uploads/2025/10/GRSNS-0006-2048x1534.jpg"
+                            class="img-fluid rounded shadow-sm w-100" alt="Hồ bơi toàn cảnh">
+                    </div>
+                    <div class="col-md-6">
+                        <img src="https://sns.edu.vn/wp-content/uploads/2021/03/154bbc050ea6fdf8a4b7.jpg.webp"
+                            class="img-fluid rounded shadow-sm w-100" alt="Học sinh tập bơi">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--  -->
+    <section class="function-rooms py-5 bg-white">
+        <div class="container">
+            <h5 class="fw-bold text-success-dark mb-4 text-uppercase">Phòng Chức Năng</h5>
+
+            <div class="function-room-content text-secondary lh-lg mb-5">
+                <p class="mb-3">
+                    Sáng chế là một trong 3 giá trị cốt lõi mà Trường St. Nicholas theo đuổi để trang bị và giáo dục
+                    STEM cho học sinh của mình – với tư cách là xu thế thời đại trong kỷ nguyên của cuộc cách mạng 4.0 –
+                    sẽ được triển khai và tiến hành cho các cấp học kể cả từ bậc học tiểu học của SNS.
+                </p>
+                <p class="mb-0">
+                    Nhà trường xây dựng phòng thí nghiệm STEM Lab riêng bên cạnh phòng thí nghiệm khoa học như là một
+                    khẳng định mạnh mẽ của SNS về việc nhà trường coi trọng tư duy thực hành theo phong cách Hoa Kỳ,
+                    giúp các em được chuẩn bị sẵn sàng ở mức độ cao nhất với định hướng nghề nghiệp trong tương lai ở
+                    các quốc gia tiên tiến.
+                </p>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="facility-img-wrapper shadow-sm rounded overflow-hidden">
+                        <img src="https://sns.edu.vn/wp-content/uploads/2021/03/0f510c57b1f442aa1be5.jpg.webp"
+                            alt="Học sinh thực hành tại STEM Lab" class="img-fluid w-100 custom-img-ratio">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="facility-img-wrapper shadow-sm rounded overflow-hidden">
+                        <img src="https://sns.edu.vn/wp-content/uploads/2021/03/650a40f116ffeba1b2ee-2048x1688.jpg.webp"
+                            alt="Thực hành khoa học" class="img-fluid w-100 custom-img-ratio">
+                    </div>
+                </div>
+            </div>
+            <!-- 2 -->
+            <br><br>
+            <h5 class="fw-bold text-success-dark mb-4 text-uppercase">Phòng nghệ thuật & thủ công</h5>
+
+            <div class="function-room-content text-secondary lh-lg mb-5">
+                <p class="mb-3">
+                    Tại SNS, chúng tôi đánh giá cao sự sáng tạo và hiểu rằng sự sáng tạo là một phần quan trọng trong
+                    việc giáo dục học sinh. Đó là lý do tại sao chúng tôi nuôi dưỡng trí tưởng tượng, khuyến khích các
+                    em tạo ra các sản phẩm độc đáo của riêng mình tại phòng Nghệ thuật & Thủ công của trường. Học sinh
+                    của trường đều có thể lên ý tưởng sáng tạo và phát triển các sản phẩm phẩm thủ công bằng cách sử
+                    dụng kết hợp phương pháp truyền thống và hiện đại tại phòng Nghệ thuật & Thủ công này.
+                </p>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="facility-img-wrapper shadow-sm rounded overflow-hidden">
+                        <img src="https://sns.edu.vn/wp-content/uploads/2021/03/8a0c8ebd041ef740ae0f.jpg.webp"
+                            alt="Học sinh thực hành tại STEM Lab" class="img-fluid w-100 custom-img-ratio">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="facility-img-wrapper shadow-sm rounded overflow-hidden">
+                        <img src="https://sns.edu.vn/wp-content/uploads/2021/03/297f5e49d7ea24b47dfb.jpg.webp"
+                            alt="Thực hành khoa học" class="img-fluid w-100 custom-img-ratio">
+                    </div>
+                </div>
+            </div>
+            <!-- 3 -->
+            <br><br>
+            <h5 class="fw-bold text-success-dark mb-4 text-uppercase">Khu vui chơi mầm non</h5>
+
+            <div class="function-room-content text-secondary lh-lg mb-5">
+                <p class="mb-3">
+                    Khu vui chơi của khối Mầm non được thiết kế và trang trí lại hằng năm. Các phòng được kết nối với
+                    nhau tạo ra một môi trường mà trẻ có thể học thông qua các hoạt động vui chơi, phù hợp cho giáo viên
+                    và học sinh mầm non. Bên cạnh các phòng của lớp Mầm Non là bể bơi cho học sinh Mầm non và tiểu học
+                    phía ngoài cạnh sân chơi cát, và nhà gỗ.
+                </p>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="facility-img-wrapper shadow-sm rounded overflow-hidden">
+                        <img src="https://sns.edu.vn/wp-content/uploads/2025/10/DSCF5035-2048x1365.jpg"
+                            alt="Học sinh thực hành tại STEM Lab" class="img-fluid w-100 custom-img-ratio">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="facility-img-wrapper shadow-sm rounded overflow-hidden">
+                        <img src="https://sns.edu.vn/wp-content/uploads/2025/10/DSCF5040-2048x1365.jpg"
+                            alt="Thực hành khoa học" class="img-fluid w-100 custom-img-ratio">
+                    </div>
+                </div>
+            </div>
+            <!-- 4 -->
+            <br><br>
+            <h5 class="fw-bold text-success-dark mb-4 text-uppercase">Phòng vi tính</h5>
+
+            <div class="function-room-content text-secondary lh-lg mb-5">
+                <p class="mb-3">
+                    Học sinh và giáo viên có quyền truy cập vào hệ thống CNTT trong toàn trường học qua mạng không dây.
+                    Ở khối Trung học, học sinh sử dụng máy tính xách tay trong nhiều môn học, giáo viên giao bài tập về
+                    nhà và chuyển lời nhắc cũng bằng phương tiện đó. Ở khối Tiểu học, học sinh có quyền truy cập máy
+                    tính để bàn trong mỗi lớp học, một số iPads đang được sử dụng trong các lớp nhỏ của khối Tiểu học.
+                    Các lớp học có máy chiếu và màn hình tivi cho phép giáo viên và học sinh học bằng cách quan sát và
+                    chia sẻ.
+                </p>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="facility-img-wrapper shadow-sm rounded overflow-hidden">
+                        <img src="https://sns.edu.vn/wp-content/uploads/2021/03/IMG_7460-2048x1500.jpg.webp"
+                            alt="Học sinh thực hành tại STEM Lab" class="img-fluid w-100 custom-img-ratio">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="facility-img-wrapper shadow-sm rounded overflow-hidden">
+                        <img src="https://sns.edu.vn/wp-content/uploads/2021/03/de22b8ac900e63503a1f.jpg.webp"
+                            alt="Thực hành khoa học" class="img-fluid w-100 custom-img-ratio">
+                    </div>
+                </div>
+            </div>
+            <!-- 5 -->
+            <br><br>
+            <h5 class="fw-bold text-success-dark mb-4 text-uppercase">Khu thể dục & thể thao đa năng</h5>
+
+            <div class="function-room-content text-secondary lh-lg mb-5">
+                <p class="mb-3">
+                    Khu thể dục & thể thao này của trường St. Nicholas có thể tổ chức các trận đấu nhỏ của nhiều môn thể
+                    thao như bóng đá, bóng bàn, bàn bi lắc bóng đá, phòng tập đánh bóng quần vợt, bàn bida… Sàn nhà là
+                    sàn chuyên dụng cho thể dục & thể thao, có khả năng hấp thụ lực cao, hỗ trợ chống trượt và tạo hiệu
+                    suất tốt.
+                </p>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="facility-img-wrapper shadow-sm rounded overflow-hidden">
+                        <img src="https://sns.edu.vn/wp-content/uploads/2025/10/GRSNS-0007-2048x1534.jpg"
+                            alt="Học sinh thực hành tại STEM Lab" class="img-fluid w-100 custom-img-ratio">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="facility-img-wrapper shadow-sm rounded overflow-hidden">
+                        <img src="https://sns.edu.vn/wp-content/uploads/2025/10/GRSNS-0002-2048x1475.jpg"
+                            alt="Thực hành khoa học" class="img-fluid w-100 custom-img-ratio">
+                    </div>
+                </div>
+            </div>
+            <!-- 6 -->
+            <!-- 5 -->
+            <br><br>
+            <h5 class="fw-bold text-success-dark mb-4 text-uppercase">Căn tin</h5>
+
+            <div class="function-room-content text-secondary lh-lg mb-5">
+                <p class="mb-3">
+                    Các dịch vụ ăn uống tại căn tin hiện được quản lý bởi chính Nhà trường, với đầu bếp đạt tiêu chuẩn
+                    khách-sạn-5-sao uy tín và an toàn. Căn tin phục vụ theo phong cách tự chọn (buffet), cung cấp thực
+                    đơn phong phú với các món đa dạng từ Việt Nam, đến ẩm thực phương Tây và luôn theo đúng công thức
+                    dinh dưỡng từ bữa các bữa chính đến bữa xế. Thực đơn được gửi đến phụ huynh hàng tuần và cũng được
+                    thăm dò ý kiến của học sinh.
+                </p>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="facility-img-wrapper shadow-sm rounded overflow-hidden">
+                        <img src="https://sns.edu.vn/wp-content/uploads/2025/10/520494669_1211484710995339_5621714497856143605_n.jpg"
+                            alt="Học sinh thực hành tại STEM Lab" class="img-fluid w-100 custom-img-ratio">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="facility-img-wrapper shadow-sm rounded overflow-hidden">
+                        <img src="https://sns.edu.vn/wp-content/uploads/2025/10/520158284_1211484717662005_4262810943278736177_n.jpg"
+                            alt="Thực hành khoa học" class="img-fluid w-100 custom-img-ratio">
+                    </div>
+                </div>
+            </div>
+            <!--  -->
+
+        </div>
+    </section>
+    <!--  -->
+    <footer class="text-white py-5" style="background-color: #3e502c;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 mb-4">
+                    <img src="https://sns.edu.vn/wp-content/uploads/2026/03/LOGO-SNS-2025_green-dark-scaled-e1773720100248-768x357.png"
+                        height="100" class="ms-2">
+                </div>
+                <div class="col-lg-3 mb-4">
+                    <h5 class="fw-bold mb-3">TUYỂN SINH</h5>
+                    <hr border-bottom pb-2 style="width: 100px;">
+                    <ul class="list-unstyled small lh-lg">
+                        <li>Tại sao chọn SNS</li>
+                        <li>Quy trình đăng ký</li>
+                        <li>Học phí</li>
+                        <li>Tuyển dụng</li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <h5 class="fw-bold mb-3">HỆ ĐÀO TẠO</h5>
+                    <hr border-bottom pb-2 style="width: 100px;">
+                    <ul class="list-unstyled small lh-lg">
+                        <li>Hệ Mầm non</li>
+                        <li>Hệ Chuẩn Quốc tế</li>
+                        <li>Hệ Song ngữ Tích hợp</li>
+                        <li>Hệ Phổ thông tiếng Anh Mỹ nâng cao</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="text-center pt-4 border-top opacity-50 small">
+                Copyright 2026 © St. Nicholas
+            </div>
+        </div>
+    </footer>
+
+    <div class="social-contact-circles">
+        <a href="tel:0123456789" class="contact-item phone" title="Gọi điện">
+            <i class="fa-solid fa-phone"></i>
+        </a>
+        <a href="https://zalo.me/yourid" class="contact-item zalo" title="Chat Zalo">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Icon_of_Zalo.svg" alt="Zalo">
+        </a>
+        <button id="backToTop" class="contact-item scroll-top">
+            <i class="fa-solid fa-chevron-up"></i>
+        </button>
+    </div>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+
+</html>

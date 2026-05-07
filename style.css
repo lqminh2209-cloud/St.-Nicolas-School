@@ -1,7 +1,6 @@
 body {
   font-family: "Montserrat", sans-serif;
   background: #f5f5f5;
-
 }
 
 /* Colors */
@@ -669,7 +668,6 @@ body {
 }
 /* lien hệ */
 
-
 .section-title {
   font-weight: 600;
   color: #4d6b57;
@@ -709,269 +707,972 @@ body {
 }
 /* Màu sắc thương hiệu */
 .text-success-dark {
-    color: #4a6333;
+  color: #4a6333;
 }
 
 .text-success {
-    color: #4a6333 !important;
+  color: #4a6333 !important;
 }
 
 /* Kiểu chữ cho phần liên hệ */
 .contact-details li {
-    font-size: 1.1rem;
-    color: #444;
+  font-size: 1.1rem;
+  color: #444;
 }
 
 .contact-details i {
-    font-size: 1.2rem;
-    width: 25px;
+  font-size: 1.2rem;
+  width: 25px;
 }
 
 /* Badge "LIÊN HỆ" giống trong hình */
 .badge.border {
-    border-color: #dee2e6 !important;
-    letter-spacing: 1px;
-    border-radius: 0;
+  border-color: #dee2e6 !important;
+  letter-spacing: 1px;
+  border-radius: 0;
 }
 
 /* Tăng hiệu ứng cho bản đồ */
 .map-wrapper {
-    transition: box-shadow 0.3s ease;
+  transition: box-shadow 0.3s ease;
 }
 
 .map-wrapper:hover {
-    box-shadow: 0 10px 25px rgba(0,0,0,0.1) !important;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1) !important;
 }
 
 /* Đảm bảo bản đồ co giãn tốt trên mobile */
 @media (max-width: 991px) {
-    .map-wrapper iframe {
-        height: 300px;
-    }
+  .map-wrapper iframe {
+    height: 300px;
+  }
 }
 /* end lien he */
 /* gioi thieu */
 /* Trang Giới thiệu tổng thể */
 .about-hero {
-    height: 400px;
+  height: 400px;
 }
 
 .icon-circle {
-    width: 70px;
-    height: 70px;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 28px;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 28px;
 }
 
 .core-value-card {
-    transition: transform 0.3s ease, background-color 0.3s ease;
-    border-radius: 15px;
+  transition:
+    transform 0.3s ease,
+    background-color 0.3s ease;
+  border-radius: 15px;
 }
 
 .core-value-card.active {
-    background-color: #4a6333; /* Màu xanh SNS */
-    color: white;
+  background-color: #4a6333; /* Màu xanh SNS */
+  color: white;
 }
 
 .core-value-card:hover {
-    transform: translateY(-10px);
+  transform: translateY(-10px);
 }
 
 .core-value-card.active p {
-    color: rgba(255,255,255,0.8) !important;
+  color: rgba(255, 255, 255, 0.8) !important;
 }
 
 /* Hiệu ứng trượt cho ảnh */
 .img-fluid {
-    transition: 0.5s ease;
+  transition: 0.5s ease;
 }
 
 .img-fluid:hover {
-    transform: scale(1.02);
+  transform: scale(1.02);
 }
 
 @media (max-width: 768px) {
-    .about-hero {
-        height: 250px;
-    }
+  .about-hero {
+    height: 250px;
+  }
 }
 /* end gioi thieu */
 /* equest content */
 .page-header {
-    /* Màu xanh đen đặc trưng của EQuest */
-    background-color: #1a2938; 
-    min-height: 250px;
+  /* Màu xanh đen đặc trưng của EQuest */
+  background-color: #1a2938;
+  min-height: 250px;
 }
 
 .letter-spacing-1 {
-    letter-spacing: 2px;
-    font-weight: 600;
+  letter-spacing: 2px;
+  font-weight: 600;
 }
 
 .divider {
-    width: 60px;
-    height: 3px;
-    background-color: rgba(255, 255, 255, 0.3); /* Đường kẻ mờ màu trắng */
-    border-radius: 2px;
+  width: 60px;
+  height: 3px;
+  background-color: rgba(255, 255, 255, 0.3); /* Đường kẻ mờ màu trắng */
+  border-radius: 2px;
 }
 
 /* Tùy chỉnh tiêu đề h1 để trông chuyên nghiệp hơn */
 .page-header h1 {
-    font-size: 2.5rem;
-    line-height: 1.2;
+  font-size: 2.5rem;
+  line-height: 1.2;
 }
 
 @media (max-width: 768px) {
-    .page-header h1 {
-        font-size: 1.8rem;
-    }
+  .page-header h1 {
+    font-size: 1.8rem;
+  }
 }
 /* end */
 /* content equest*/
 /* Khung nội dung chính */
 .content-box {
-    border: 1px solid #e0e0e0;
-    transition: transform 0.3s ease;
+  border: 1px solid #e0e0e0;
+  transition: transform 0.3s ease;
 }
 
 /* Hiệu ứng bóng đổ mềm mại chuyên nghiệp */
 .shadow-lg {
-    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.08) !important;
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.08) !important;
 }
 
 /* Định dạng tiêu đề */
 .equest-detailed-content h3 {
-    color: #2c3e50;
-    position: relative;
-    padding-bottom: 10px;
+  color: #2c3e50;
+  position: relative;
+  padding-bottom: 10px;
 }
 
 .equest-detailed-content h3::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 50px;
-    height: 3px;
-    background-color: #4a6333; /* Màu xanh thương hiệu */
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 50px;
+  height: 3px;
+  background-color: #4a6333; /* Màu xanh thương hiệu */
 }
 
 /* Nội dung chữ */
 .lh-lg {
-    line-height: 1.8;
-    text-align: justify;
+  line-height: 1.8;
+  text-align: justify;
 }
 
 .text-secondary {
-    color: #555 !important;
+  color: #555 !important;
 }
 
 /* Danh sách năng lực cốt lõi */
 .core-competencies li p strong {
-    color: #333;
-    font-weight: 600;
+  color: #333;
+  font-weight: 600;
 }
 
 .badge {
-    padding: 0.5em;
-    border-radius: 50%;
+  padding: 0.5em;
+  border-radius: 50%;
 }
 /* end  */
 /* form bình luận */
 /* Màu xanh đen của nút bấm giống ảnh */
 .btn-dark-blue {
-    background-color: #4e6683;
-    color: white;
-    border: none;
-    border-radius: 2px; /* Bo góc nhẹ theo kiểu nút trong ảnh */
-    transition: background 0.3s ease;
+  background-color: #4e6683;
+  color: white;
+  border: none;
+  border-radius: 2px; /* Bo góc nhẹ theo kiểu nút trong ảnh */
+  transition: background 0.3s ease;
 }
 
 .btn-dark-blue:hover {
-    background-color: #3d5168;
-    color: #ffffff;
+  background-color: #3d5168;
+  color: #ffffff;
 }
 
 /* Tùy chỉnh các ô input */
 .comment-box .form-control {
-    border: 1px solid #ced4da;
-    border-radius: 2px;
-    padding: 10px 15px;
+  border: 1px solid #ced4da;
+  border-radius: 2px;
+  padding: 10px 15px;
 }
 
 .comment-box .form-control:focus {
-    background-color: #fff;
-    border-color: #4e6683;
-    box-shadow: 0 0 0 0.25rem rgba(78, 102, 131, 0.1);
+  background-color: #fff;
+  border-color: #4e6683;
+  box-shadow: 0 0 0 0.25rem rgba(78, 102, 131, 0.1);
 }
 
 /* Khoảng cách giữa các nhãn và ô nhập */
 .form-label {
-    font-size: 0.95rem;
-    margin-bottom: 8px;
+  font-size: 0.95rem;
+  margin-bottom: 8px;
 }
 
 /* Hiệu ứng bóng đổ nhẹ cho khung bình luận */
 .comment-box {
-    border: 1px solid rgba(0,0,0,0.05);
+  border: 1px solid rgba(0, 0, 0, 0.05);
 }
 /* end form bình luận */
 /* ban giam hiệu */
 /* Màu xanh đặc trưng của trường St. Nicholas */
 .text-success-dark {
-    color: #4a6333 !important;
+  color: #4a6333 !important;
 }
 
 /* Khoảng cách chữ cho tiêu đề */
 .letter-spacing-2 {
-    letter-spacing: 2px;
+  letter-spacing: 2px;
 }
 
 /* Định dạng nội dung văn bản */
 .leader-description {
-    font-size: 1.05rem;
-    text-align: justify;
+  font-size: 1.05rem;
+  text-align: justify;
 }
 
 .leader-info h3 {
-    font-size: 1.75rem;
+  font-size: 1.75rem;
 }
 
 /* Đảm bảo hình ảnh lãnh đạo sắc nét và vừa vặn */
 .leader-image-wrapper img {
-    width: 100%;
-    object-fit: cover;
-    border: 1px solid #eee;
+  width: 100%;
+  object-fit: cover;
+  border: 1px solid #eee;
 }
 
 /* Responsive cho thiết bị di động */
 @media (max-width: 767.98px) {
-    .leadership-section h2 {
-        font-size: 1.5rem;
-    }
-    
-    .leader-info {
-        text-align: center;
-    }
-    
-    .leader-description {
-        text-align: left;
-    }
+  .leadership-section h2 {
+    font-size: 1.5rem;
+  }
 
-    .leader-image-wrapper {
-        max-width: 250px;
-        margin: 0 auto 20px;
-    }
+  .leader-info {
+    text-align: center;
+  }
+
+  .leader-description {
+    text-align: left;
+  }
+
+  .leader-image-wrapper {
+    max-width: 250px;
+    margin: 0 auto 20px;
+  }
 }
 /* banner logo */
 /* Đường kẻ màu vàng cam đặc trưng */
 .partner-border-line {
-    width: 100%;
-    height: 1px;
-    background-color: #f1b346; /* Màu cam vàng từ hình ảnh */
+  width: 100%;
+  height: 1px;
+  background-color: #f1b346; /* Màu cam vàng từ hình ảnh */
 }
 /* end banner logo */
 /* end ban giám hiệu */
+/* kiểm định đối tác */
+/* Màu xanh đặc trưng tiêu đề */
+.text-success-dark {
+  color: #4a6333 !important;
+  font-size: 1.8rem;
+  letter-spacing: 1px;
+}
+
+/* Nội dung văn bản */
+.accreditation-content p {
+  font-size: 1.05rem;
+  text-align: justify; /* Căn đều 2 bên giống trong ảnh */
+}
+
+/* Khung bọc ảnh chứng nhận */
+.certificate-wrapper {
+  background-color: #f9f9f9;
+  transition: transform 0.3s ease;
+}
+
+.certificate-wrapper:hover {
+  transform: scale(1.02); /* Hiệu ứng phóng nhẹ khi di chuột */
+}
+
+/* Responsive cho di động */
+@media (max-width: 767.98px) {
+  .text-success-dark {
+    font-size: 1.4rem;
+  }
+  .accreditation-content p {
+    text-align: left; /* Điện thoại nên để căn trái cho dễ đọc */
+  }
+}
+/* Tùy chỉnh dấu chấm đầu dòng (bullet) */
+.dot-bullet {
+  width: 6px;
+  height: 6px;
+  background-color: #333;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+/* Định dạng văn bản */
+.program-content p {
+  font-size: 1.05rem;
+  text-align: justify;
+}
+
+.program-content h6 {
+  font-size: 1.1rem;
+}
+
+.program-content ul li {
+  font-size: 1rem;
+  color: #444;
+}
+
+/* Khung ảnh chứng nhận */
+.certificate-box {
+  transition: all 0.3s ease;
+  background-color: #fff;
+}
+
+.certificate-box:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Đảm bảo thứ tự hiển thị trên mobile: Chữ trước, Ảnh sau */
+@media (max-width: 767.98px) {
+  .program-content p {
+    text-align: left;
+  }
+}
+/* end kiểm định đối tác */
+/* sns */
+/* Màu xanh thẫm cho header và viền */
+.border-success-dark {
+  border: 1.5px solid #4e6683 !important;
+}
+
+.sns-card-header {
+  background-color: #4e6683; /* Màu xanh Navy/Grey trong ảnh */
+}
+
+/* Màu chữ tiêu đề phía trên card */
+.text-success-dark {
+  color: #4a6333;
+  letter-spacing: 1px;
+}
+
+/* Định dạng nội dung chữ bên trong */
+.sns-description {
+  font-size: 1.1rem;
+  text-align: center; /* Căn giữa giống trong ảnh */
+}
+
+.sns-description strong {
+  color: #333;
+}
+
+/* Bo góc lớn cho Card */
+.rounded-4 {
+  border-radius: 1.5rem !important;
+}
+
+/* Hiệu ứng đổ bóng nhẹ */
+.sns-card {
+  transition: transform 0.3s ease;
+}
+
+.sns-card:hover {
+  transform: translateY(-5px);
+}
+/* end sns */
+/* slide sns */
+/* Đảm bảo tỉ lệ ảnh và không bị méo */
+.slide-image-box {
+    aspect-ratio: 16 / 10; /* Tỉ lệ giống trong ảnh image_2ae0e6.jpg */
+    overflow: hidden;
+    border-right: 2px solid #fff; /* Tạo đường kẻ trắng phân cách */
+}
+
+.slide-image-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.slide-image-box:hover img {
+    transform: scale(1.1);
+}
+
+/* Tùy chỉnh nút điều hướng slide */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(74, 99, 51, 0.8); /* Màu xanh thương hiệu */
+    width: 3rem;
+    height: 3rem;
+    background-size: 50%;
+}
+
+.carousel-control-prev { left: 20px; }
+.carousel-control-next { right: 20px; }
+
+/* Tiêu đề section */
+.text-success-dark {
+    color: #4a6333;
+}
+
+/* Responsive cho Mobile */
+@media (max-width: 767.98px) {
+    .slide-image-box {
+        aspect-ratio: 1 / 1; /* Trên mobile ảnh vuông cho gọn */
+    }
+}
+/* end slide sns */
+/* quy trinh dang ky */
+/* Màu tiêu đề xanh thẫm đặc trưng */
+.text-success-dark {
+    color: #4a6333 !important;
+}
+
+.text-primary-dark {
+    color: #4e6683 !important;
+}
+
+/* Tùy chỉnh Accordion giống hình mẫu */
+.custom-sns-accordion .accordion-item {
+    background-color: transparent;
+    border-left: none;
+    border-right: none;
+}
+
+.custom-sns-accordion .accordion-button {
+    background-color: transparent;
+    box-shadow: none;
+    padding: 1.25rem 0.5rem;
+    color: #555;
+    font-size: 1.05rem;
+}
+
+/* Khi đang mở */
+.custom-sns-accordion .accordion-button:not(.collapsed) {
+    background-color: #f8f9fa; /* Màu nền nhạt khi mở */
+    color: #4e6683;
+}
+
+/* Tùy chỉnh icon mũi tên */
+.custom-sns-accordion .accordion-button::after {
+    background-size: 1rem;
+}
+
+.accordion-body {
+    padding-left: 1rem;
+    line-height: 1.8;
+}
+
+/* Đổ bóng cho ảnh */
+.registration-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+/* slide quy trinh đăng ký */
+.gallery-item {
+    overflow: hidden;
+    aspect-ratio: 1 / 1; /* Tạo khung vuông cho đồng bộ */
+    border-right: 2px solid #fff;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.05);
+    filter: brightness(0.9);
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+/* Modal styling */
+#imageModal .modal-xl {
+    max-width: 90vw;
+}
+
+#zoomedImg {
+    max-height: 85vh;
+}
+/* end slide quy trinh đăng ký */
+/* end quy trinh dang ky */
+/* học phí */
+/* Màu tiêu đề xanh thẫm đặc trưng */
+.text-success-dark {
+    color: #4a6333 !important;
+    letter-spacing: 2px;
+}
+
+/* Định dạng các đường link biểu phí */
+.fee-link {
+    color: #000; /* Chữ đen như trong ảnh mẫu */
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+/* Hiệu ứng khi di chuột vào link */
+.fee-link:hover {
+    color: #4a6333; /* Chuyển sang màu xanh thương hiệu khi hover */
+    text-decoration: underline;
+}
+
+/* Đảm bảo ảnh luôn vuông vức và đẹp */
+.fee-card img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.fee-card:hover img {
+    transform: translateY(-5px);
+}
+
+/* Khoảng cách dòng cho các link sát nhau */
+.fee-links .fee-link {
+    line-height: 1.5;
+}
+/* end học phí */
+/* da ngoai */
+/* Làm cho chữ trên ảnh nổi bật hơn */
+.cep-title {
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+    letter-spacing: 1px;
+}
+
+/* Định dạng văn bản mô tả */
+.cep-description p {
+    font-size: 1.05rem;
+    text-align: justify; /* Căn đều hai bên như trong ảnh mẫu */
+}
+
+/* Tùy chỉnh cho mobile */
+@media (max-width: 768px) {
+    .cep-title {
+        font-size: 1.5rem !important;
+    }
+    .cep-description p {
+        text-align: left;
+    }
+}
+/* slide da ngoai */
+/* Tùy chỉnh nút điều hướng */
+.custom-nav {
+    width: 40px;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0; /* Ẩn đi khi không hover */
+    transition: all 0.3s ease;
+}
+
+.carousel-container:hover .custom-nav {
+    opacity: 1; /* Hiện lên khi rê chuột vào vùng slide */
+}
+
+.carousel-control-prev { left: -20px; }
+.carousel-control-next { right: -20px; }
+
+/* Tỉ lệ ảnh hàng trên và dưới */
+#carouselFieldTripTop img { aspect-ratio: 4/3; object-fit: cover; }
+#carouselFieldTripBottom img { aspect-ratio: 1/1; object-fit: cover; }
+
+/* Responsive: 1 lướt 2 hình trên Mobile */
+@media (max-width: 767px) {
+    .carousel-item .col-3 { width: 50%; }
+    .custom-nav { opacity: 1; width: 30px; height: 30px; }
+}
+/* slide 3  */
+/* Nút mũi tên màu tối để nổi bật trên nền trắng */
+.custom-nav-dark {
+    width: 40px;
+    height: 40px;
+    background-color: rgba(74, 99, 51, 0.8); /* Màu xanh thương hiệu SNS */
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.carousel-control-prev.custom-nav-dark { left: -20px; }
+.carousel-control-next.custom-nav-dark { right: -20px; }
+
+/* Giữ tỉ lệ ảnh đồng nhất 1:1 hoặc 4:3 */
+.charity-img {
+    width: 100%;
+    aspect-ratio: 4/3;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.charity-img:hover {
+    transform: scale(1.05);
+}
+
+/* Responsive cho Mobile */
+@media (max-width: 767px) {
+    #carouselCharity .col-3 {
+        width: 50%; /* Hiện 2 ảnh trên mobile cho rõ */
+    }
+    .custom-nav-dark {
+        width: 30px;
+        height: 30px;
+    }
+}
+/* end da ngoai */
+/* cau lac bo */
+/* Màu tiêu đề xanh đặc trưng */
+.text-success-dark {
+    color: #4a6333 !important;
+}
+
+.club-title {
+    color: #4a6333;
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.club-text {
+    color: #333;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+/* Đảm bảo ảnh có kích thước đẹp */
+.club-section img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* Khoảng cách cho mobile */
+@media (max-width: 767px) {
+    .club-title {
+        font-size: 1.3rem;
+    }
+}
+/* end cau lac bo */
+/* the thao */
+/* Màu xanh thương hiệu */
+.text-success-dark {
+    color: #4a6333 !important;
+}
+
+/* Xóa màu nền và hiệu ứng đổ bóng mặc định của Bootstrap khi nhấn */
+.custom-sports-accordion .accordion-button {
+    background-color: transparent;
+    color: #6c757d;
+    box-shadow: none;
+    padding-left: 0;
+    font-size: 1.1rem;
+}
+
+.custom-sports-accordion .accordion-button:not(.collapsed) {
+    color: #4a6333; /* Màu khi đang mở */
+    background-color: #f8f9fa; /* Màu nền nhạt khi mở như trong ảnh */
+    padding-left: 15px;
+}
+
+/* Tùy chỉnh icon mũi tên */
+.custom-sports-accordion .accordion-button::after {
+    filter: grayscale(1);
+}
+
+/* Văn bản nội dung */
+.accordion-body p {
+    line-height: 1.7;
+    text-align: justify;
+    font-size: 0.95rem;
+}
+
+.sports-intro p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+/* end the thao */
+/* hoi dong hoc sinh */
+/* Lớp phủ cho ảnh */
+.council-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* Tạo một lớp phủ tối nhẹ để chữ trắng nổi bật hơn */
+    background-color: rgba(0, 0, 0, 0.2); 
+}
+
+/* Tùy chỉnh đoạn văn bản bên dưới */
+.council-description p {
+    line-height: 1.8;
+    text-align: justify;
+    font-size: 1.05rem;
+}
+
+/* Điều chỉnh tiêu đề cho Mobile */
+@media (max-width: 767px) {
+    .council-overlay h2 {
+        font-size: 1.5rem !important;
+    }
+    .council-description p {
+        font-size: 0.95rem;
+        text-align: left; /* Mobile để canh trái sẽ dễ đọc hơn */
+    }
+}
+/* card */
+.member-card img {
+    width: 100%;
+    /* Bạn có thể cố định aspect-ratio nếu các ảnh gốc không cùng kích thước */
+    aspect-ratio: 1 / 1; 
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.member-card:hover img {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1) !important;
+}
+
+.member-card h5 {
+    font-size: 1.1rem;
+    letter-spacing: 0.5px;
+}
+
+.member-card p {
+    font-size: 0.95rem;
+}
+
+/* Khoảng cách trên mobile */
+@media (max-width: 767px) {
+    .member-card {
+        margin-bottom: 2rem;
+    }
+}
+/* end hoi dong hoc sinh */
+/* hoat dong cong dong */
+/* Tùy chỉnh nút mũi tên */
+.custom-btn {
+    width: 5%;
+    background: rgba(74, 99, 51, 0.2); /* Màu xanh nhạt */
+    border-radius: 8px;
+}
+
+.custom-btn:hover {
+    background: rgba(74, 99, 51, 0.5);
+}
+
+/* Định dạng ảnh trong slide */
+.community-img {
+    aspect-ratio: 3/4; /* Giữ tỷ lệ dọc như hình mẫu */
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+/* Hiệu ứng chuyển động mượt */
+.carousel-item {
+    transition: transform 0.6s ease-in-out;
+}
+
+/* Responsive: Trên Mobile chỉ hiện 2 ảnh một hàng để không bị quá nhỏ */
+@media (max-width: 767px) {
+    .community-img {
+        aspect-ratio: 1/1; /* Chuyển sang ảnh vuông trên mobile cho dễ nhìn */
+    }
+}
+/* end hoat dong cong dong */
+/* lịch học năm */
+/* Tùy chỉnh khoảng cách và hiệu ứng cho các link chữ */
+.small-text-spacing {
+    letter-spacing: 0.5px;
+    font-size: 0.85rem;
+    transition: color 0.3s ease;
+}
+
+.calendar-links a:hover {
+    color: #b18a47 !important; /* Đổi sang màu vàng đồng khi hover */
+}
+
+/* Đảm bảo hình ảnh tiêu đề sắc nét */
+.calendar-image-wrapper img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Hiệu ứng đổ bóng nhẹ cho ảnh để trông như một tờ lịch thật */
+.calendar-image-wrapper {
+    border: 1px solid #f0f0f0;
+}
+
+/* Responsive cho điện thoại */
+@media (max-width: 768px) {
+    .calendar-links a {
+        font-size: 0.75rem;
+    }
+    .calendar-links .h5 {
+        font-size: 1rem;
+    }
+}
+/* end lịch hoc nam */
+/* cơ sở vật chất */
+/* Màu xanh đặc trưng tiêu đề (giống các phần trước) */
+.text-success-dark {
+    color: #4a6333 !important;
+    letter-spacing: 1px;
+}
+
+/* Định dạng tiêu đề phụ */
+.facility-intro h5 {
+    font-size: 1.15rem;
+    letter-spacing: 0.5px;
+}
+
+/* Định dạng văn bản mô tả */
+.facility-description {
+    font-size: 1rem;
+    text-align: justify; /* Căn đều 2 bên như trong ảnh */
+}
+
+/* Hiệu ứng cho ảnh chính */
+.facility-main-image {
+    transition: transform 0.4s ease;
+}
+
+.facility-main-image img {
+    object-fit: cover;
+    max-height: 500px; /* Giới hạn chiều cao để không quá dài trên Desktop */
+}
+
+/* Responsive cho thiết bị di động */
+@media (max-width: 767.98px) {
+    .facility-intro h5 {
+        font-size: 1rem;
+    }
+    .facility-description {
+        text-align: left;
+    }
+}
+/* Màu xanh đặc trưng đồng bộ với các phần trước */
+.text-success-dark {
+    color: #4a6333 !important;
+    font-size: 1.1rem;
+    letter-spacing: 0.5px;
+}
+
+/* Đảm bảo các ảnh trong lưới có cùng tỷ lệ hiển thị đẹp mắt */
+.facility-details img {
+    aspect-ratio: 16 / 10; /* Tỷ lệ hình chữ nhật chuẩn cho không gian nội thất */
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.facility-details img:hover {
+    transform: scale(1.02);
+}
+
+/* Khoảng cách cho mobile */
+@media (max-width: 767px) {
+    .facility-details h5 {
+        font-size: 1rem;
+        margin-bottom: 1rem;
+    }
+}
+/* Màu xanh đặc trưng đồng bộ với các phần trước */
+/* Màu xanh thương hiệu */
+.text-success-dark {
+    color: #4a6333 !important;
+}
+
+/* Ép ảnh luôn căn đều theo khung */
+.custom-img-ratio {
+    /* Tỷ lệ 3:2 giúp ảnh trông cân đối cho phòng học */
+    aspect-ratio: 3 / 2; 
+    
+    /* Object-fit: cover giúp ảnh không bị méo (bị lùn hay bị kéo dài) 
+       mà sẽ tự động cắt bớt phần thừa để lấp đầy khung */
+    object-fit: cover; 
+    
+    /* Căn giữa ảnh trong khung */
+    object-position: center; 
+    
+    display: block;
+    width: 100%;
+}
+
+/* Hiệu ứng hover nhẹ nhàng */
+.facility-img-wrapper:hover .custom-img-ratio {
+    transform: scale(1.05);
+    transition: transform 0.4s ease;
+}
+
+.facility-img-wrapper {
+    transition: all 0.3s ease;
+}
+/* end cơ sở vật chất */
+/* dinh dương */
+/* Màu xanh đặc trưng cho tiêu đề */
+.text-success-dark {
+    color: #4a6333 !important;
+}
+
+/* Căn lề văn bản */
+.text-justify {
+    text-align: justify;
+}
+
+/* Định dạng ảnh trong slide */
+.food-slide-img {
+    aspect-ratio: 1 / 1; /* Để ảnh vuông đều nhau như các mẫu trước */
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+/* Tùy chỉnh các nút bấm */
+.nutrition-content .btn-outline-dark {
+    border-color: #333;
+    color: #333;
+    font-size: 0.85rem;
+    transition: all 0.3s;
+}
+
+.nutrition-content .btn-outline-dark:hover {
+    background-color: #4a6333;
+    border-color: #4a6333;
+    color: #fff;
+}
+
+/* Chỉnh nút bấm slide cho dễ nhìn hơn */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    width: 2rem;
+    height: 2rem;
+}
+
+/* Responsive cho Mobile: Slide hiện 2 ảnh thay vì 4 */
+@media (max-width: 767px) {
+    #nutritionCarousel .col-3 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+/* end dinh duong */
